@@ -1,5 +1,6 @@
 ﻿// UTAGE: Unity Text Adventure Game Engine (c) Ryohei Tokimura
 using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -408,6 +409,7 @@ namespace Utage
 					//ロード成功
 					() =>
 					{
+						Debug.Log("load file : " +file.FileName);
 						if (isOutPutDebugLog) Debug.Log("Load End :" + file.FileName);
 						loadingFileList.Remove(file);
 						LoadNextFile();
@@ -429,6 +431,7 @@ namespace Utage
 						}
 						else
 						{
+							if (!File.Exists(file.FileName)) Debug.Log(file.FileName + " is not Exists");
 							Debug.LogError("Load Failed :" + file.FileName + "\n" + file.LoadErrorMsg);
 							//ロード失敗処理
 							if (CallbackError != null)

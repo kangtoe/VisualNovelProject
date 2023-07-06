@@ -80,41 +80,10 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
-      debugIndex: 4
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\uBAA8\uB4E0 \uC2A4\uD06C\uB9BD\uD2B8 \uC885\uB8CC \uC2DC \uBA54\uC778 \uD654\uBA74\uC73C\uB85C
-        \uB3CC\uC544\uAC10"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - Template Scenario End
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 6
       debugIndex: 7
       strings:
       - 
-      - Kohaku
+      - 
       - 
       - 
       - 
@@ -125,7 +94,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
+    - rowIndex: 5
       debugIndex: 8
       strings:
       - 
@@ -140,7 +109,23 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
+    - rowIndex: 6
+      debugIndex: 18
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uBAA8\uB4E0 \uC2A4\uD06C\uB9BD\uD2B8 \uC885\uB8CC. \uBA54\uC778 \uD654\uBA74\uC73C\uB85C
+        \uB3CC\uC544\uAC10."
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
       debugIndex: 19
       strings:
       - EndScenario
@@ -149,7 +134,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/SampleProject01/SampleProject01.xls:Start
     type: 1
-    textLength: 231
+    textLength: 204
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -186,7 +171,7 @@ MonoBehaviour:
       debugIndex: 1
       strings:
       - Kohaku
-      - 
+      - Kohaku
       - default
       - 
       - 
@@ -194,7 +179,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Kokaku/portrait_kohaku_01
+      - Kokaku/portrait_kohaku_01.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -210,7 +195,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Kokaku/portrait_kohaku_05
+      - Kokaku/portrait_kohaku_05.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -226,13 +211,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Kokaku/portrait_kohaku_03
+      - Kokaku/portrait_kohaku_03.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/SampleProject01/SampleProject01.xls:Character
     type: 1
-    textLength: 255
+    textLength: 273
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -642,28 +627,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      - 
-      - 
-      - 
-      - 
-      - "\uBAA8\uB4E0 \uC2A4\uD06C\uB9BD\uD2B8 \uC885\uB8CC \uC2DC \uBA54\uC778 \uD654\uBA74\uC73C\uB85C
-        \uB3CC\uC544\uAC10"
-      isEmpty: 0
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 5
       debugIndex: 5
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - Template Scenario End
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 6
@@ -676,7 +646,7 @@ MonoBehaviour:
       debugIndex: 7
       strings:
       - 
-      - Kohaku
+      - 
       - 
       - 
       - 
@@ -758,8 +728,18 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 18
       debugIndex: 18
-      strings: []
-      isEmpty: 1
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uBAA8\uB4E0 \uC2A4\uD06C\uB9BD\uD2B8 \uC885\uB8CC. \uBA54\uC778 \uD654\uBA74\uC73C\uB85C
+        \uB3CC\uC544\uAC10."
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 19
@@ -771,6 +751,6 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/SampleProject01/SampleProject01.xls:Start
     type: 1
-    textLength: 231
+    textLength: 204
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}

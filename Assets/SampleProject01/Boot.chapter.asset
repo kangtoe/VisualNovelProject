@@ -47,7 +47,7 @@ MonoBehaviour:
       debugIndex: 1
       strings:
       - Kohaku
-      - 
+      - Kohaku
       - default
       - 
       - 
@@ -55,7 +55,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Kokaku/portrait_kohaku_01
+      - Kokaku/portrait_kohaku_01.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -71,7 +71,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Kokaku/portrait_kohaku_05
+      - Kokaku/portrait_kohaku_05.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -87,13 +87,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Kokaku/portrait_kohaku_03
+      - Kokaku/portrait_kohaku_03.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/SampleProject01/SampleProject01.xls:Character
     type: 1
-    textLength: 255
+    textLength: 273
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
