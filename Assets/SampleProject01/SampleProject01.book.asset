@@ -83,7 +83,7 @@ MonoBehaviour:
       debugIndex: 7
       strings:
       - 
-      - 
+      - Kohaku
       - 
       - 
       - 
@@ -134,7 +134,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/SampleProject01/SampleProject01.xls:Start
     type: 1
-    textLength: 204
+    textLength: 210
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -177,9 +177,9 @@ MonoBehaviour:
       - 
       - 
       - 
+      - .5
       - 
-      - 
-      - Kokaku/portrait_kohaku_01.png
+      - Kohaku/portrait_kohaku_01.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -195,7 +195,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Kokaku/portrait_kohaku_05.png
+      - Kohaku/portrait_kohaku_05.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -211,13 +211,13 @@ MonoBehaviour:
       - 
       - 
       - 
-      - Kokaku/portrait_kohaku_03.png
+      - Kohaku/portrait_kohaku_03.png
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/SampleProject01/SampleProject01.xls:Character
     type: 1
-    textLength: 273
+    textLength: 275
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -646,7 +646,7 @@ MonoBehaviour:
       debugIndex: 7
       strings:
       - 
-      - 
+      - Kohaku
       - 
       - 
       - 
@@ -751,6 +751,6 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/SampleProject01/SampleProject01.xls:Start
     type: 1
-    textLength: 204
+    textLength: 210
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
