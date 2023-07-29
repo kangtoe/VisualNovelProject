@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f183272568e6f94382e3b59c0de76cd, type: 3}
+  m_Name: Vampire.project
+  m_EditorClassIdentifier: 
+  excelList: []
+  chapterDataList:
+  - chapterName: Boot
+    excelList:
+    - {fileID: 102900000, guid: 0f5fb967c1abc064580c67aa5b9d378c, type: 3}
+    excelDir: {fileID: 0}
+  checkWaitType: 0
+  checkWhiteSpaceEndOfCell: 1
+  checkTextCount: 1
+  checkTextCountAllLanguage: 0
+  scenarios: {fileID: 11400000, guid: 7ac02a8dcc9a8104cbac239098c330d8, type: 2}
+  autoImportType: 1
+  convertPath: 
+  convertVersion: 0
+  isAutoUpdateVersionAfterConvert: 0
+  isAutoConvertOnImport: 0
+  customInportSpriteFolders:
+  - {fileID: 102900000, guid: 403e37bb22e935847b59c7ab6930129b, type: 3}
+  - {fileID: 102900000, guid: 732d374de6521fe4f80644afe71e97a2, type: 3}
+  - {fileID: 102900000, guid: 1c95d869c9dec2847878f253a7cc4fa9, type: 3}
+  - {fileID: 102900000, guid: 15befdd037e078d4baae48c0e1f43fd8, type: 3}
+  - {fileID: 102900000, guid: e8488679764c01b43ba33b1cb30335fa, type: 3}
+  customInportAudioFolders:
+  - {fileID: 102900000, guid: 1d5d2e760dd6d4b429c79fc0245c724c, type: 3}
+  - {fileID: 102900000, guid: acb3fb1e063cc0b44bcd7e707e399694, type: 3}
+  - {fileID: 102900000, guid: 60b263ff4727da84e8e75f21a80e7f5e, type: 3}
+  - {fileID: 102900000, guid: d40db2c0130f0dc45879c23629dff600, type: 3}
+  customInportMovieFolders: []
+  quickImport: 0
+  quickImportType: 0
+  parseFormula: 0
+  parseNumreic: 0
+  checkBlankRowCountOnImport: 1000
+  checkColumnCountOnImport: 500
+  enableCommentOutOnImport: 1
+  recourceDir: {fileID: 0}
+  checkExt: 0
+  customProjectSetting: {fileID: 11400000, guid: aa7e8cd3e7b3d4a4bb48633dd06ae519, type: 2}
