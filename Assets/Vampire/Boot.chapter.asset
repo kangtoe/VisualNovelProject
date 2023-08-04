@@ -53,14 +53,30 @@ MonoBehaviour:
     - rowIndex: 2
       debugIndex: 2
       strings:
+      - ???
+      - 
+      - "\uD3C9\uC0C1\uC2DC"
+      - 
+      - -500
+      - 
+      - 
+      - .5
+      - 
+      - "\uC774\uB9AC\uC544/\uC774\uB9AC\uC5441.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
       - "\uC774\uB9AC\uC544"
       - 
       - "\uD3C9\uC0C1\uC2DC"
       - 
+      - -500
       - 
       - 
-      - 
-      - 
+      - .5
       - 
       - "\uC774\uB9AC\uC544/\uC774\uB9AC\uC5441.png"
       isEmpty: 0
@@ -68,7 +84,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:Character
     type: 1
-    textLength: 174
+    textLength: 204
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
