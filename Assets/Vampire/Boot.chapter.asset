@@ -43,9 +43,38 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - "\uD604\uC6B0"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - "\uC774\uB9AC\uC544"
+      - 
+      - "\uBB34\uD45C\uC815"
+      - 
+      - -500
+      - 
+      - 
+      - .5
+      - 
+      - "\uC774\uB9AC\uC544/\uC774\uB9AC\uC544\uBB34\uD45C\uC815.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Vampire/Vampire.xls:Character
     type: 1
-    textLength: 154
+    textLength: 182
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -71,9 +100,45 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - "\uCF58\uD06C\uB9AC\uD2B8\uAC74\uBB3C\uB0B4\uBD80"
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 1.3
+      - 
+      - "\uCF58\uD06C\uB9AC\uD2B8\uAC74\uBB3C\uB0B4\uBD80.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - CG1
+      - Event
+      - 
+      - 
+      - 
+      - 
+      - 1.8
+      - 
+      - CG1.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Vampire/Vampire.xls:Texture
     type: 1
-    textLength: 112
+    textLength: 155
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
