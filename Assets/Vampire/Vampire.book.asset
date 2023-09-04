@@ -2993,6 +2993,129 @@ MonoBehaviour:
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
     entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 2
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uCC55\uD1301 \uC2DC\uC791"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Vampire/Vampire.xls:1page
+    type: 1
+    textLength: 72
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 0}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 2
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uCC55\uD1302 \uC2DC\uC791"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Vampire/Vampire.xls:2page
+    type: 1
+    textLength: 72
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 0}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 2
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uCC55\uD1303 \uC2DC\uC791"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Vampire/Vampire.xls:3page
+    type: 1
+    textLength: 72
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 0}
+    entityIndexTbl: 
+    entityDataList: []
   gridList:
   - rows:
     - rowIndex: 0
@@ -7679,5 +7802,140 @@ MonoBehaviour:
     name: Assets/Vampire/Vampire.xls:Start
     type: 1
     textLength: 5133
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 0}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uCC55\uD1301 \uC2DC\uC791"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Vampire/Vampire.xls:1page
+    type: 1
+    textLength: 72
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 0}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uCC55\uD1302 \uC2DC\uC791"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Vampire/Vampire.xls:2page
+    type: 1
+    textLength: 72
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 0}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uCC55\uD1303 \uC2DC\uC791"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Vampire/Vampire.xls:3page
+    type: 1
+    textLength: 72
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
