@@ -68,13 +68,141 @@ MonoBehaviour:
       - 
       - .5
       - 
-      - "\uC774\uB9AC\uC544/\uC774\uB9AC\uC544\uBB34\uD45C\uC815.png"
+      - "\uC774\uB9AC\uC544/\uBB34\uD45C\uC815.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - 
+      - "\uBBF8\uC18C"
+      - 
+      - -500
+      - 
+      - 
+      - .5
+      - 
+      - "\uC774\uB9AC\uC544/\uBBF8\uC18C.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - 
+      - 
+      - "\uC6C3\uC74C"
+      - 
+      - -500
+      - 
+      - 
+      - .5
+      - 
+      - "\uC774\uB9AC\uC544/\uC6C3\uC74C.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - 
+      - 
+      - "\uADF8\uB298"
+      - 
+      - -500
+      - 
+      - 
+      - .5
+      - 
+      - "\uC774\uB9AC\uC544/\uADF8\uB298.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - 
+      - 
+      - "\uB180\uB78C"
+      - 
+      - -500
+      - 
+      - 
+      - .5
+      - 
+      - "\uC774\uB9AC\uC544/\uB180\uB78C.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings:
+      - 
+      - 
+      - "\uB534\uCCAD"
+      - 
+      - -500
+      - 
+      - 
+      - .5
+      - 
+      - "\uC774\uB9AC\uC544/\uB534\uCCAD.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings:
+      - 
+      - 
+      - "\uC18C\uB9AC\uC9C0\uB984"
+      - 
+      - -500
+      - 
+      - 
+      - .5
+      - 
+      - "\uC774\uB9AC\uC544/\uC18C\uB9AC\uC9C0\uB984.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings:
+      - 
+      - 
+      - "\uB178\uB824\uBD04"
+      - 
+      - -500
+      - 
+      - 
+      - .5
+      - 
+      - "\uC774\uB9AC\uC544/\uB178\uB824\uBD04.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 11
+      strings:
+      - 
+      - 
+      - "\uB178\uB824\uBD04 \uD64D\uC870"
+      - 
+      - -500
+      - 
+      - 
+      - .5
+      - 
+      - "\uC774\uB9AC\uC544/\uB178\uB824\uBD04 \uD64D\uC870.png"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:Character
     type: 1
-    textLength: 182
+    textLength: 337
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
