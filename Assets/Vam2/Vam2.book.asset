@@ -49,7 +49,37 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 2
-      debugIndex: 2
+      debugIndex: 3
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - udsbfuifb
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 4
+      strings:
+      - DebugLog
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - asdasd
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 5
       strings:
       - 
       - 
@@ -63,8 +93,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 3
-      debugIndex: 3
+    - rowIndex: 5
+      debugIndex: 6
       strings:
       - EndScenario
       isEmpty: 0
@@ -72,7 +102,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vam2/Vam2.xls:Start
     type: 1
-    textLength: 121
+    textLength: 144
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -481,6 +511,42 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 2
       debugIndex: 2
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - udsbfuifb
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - DebugLog
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - asdasd
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
       strings:
       - 
       - 
@@ -494,8 +560,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 3
-      debugIndex: 3
+    - rowIndex: 6
+      debugIndex: 6
       strings:
       - EndScenario
       isEmpty: 0
@@ -503,6 +569,6 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vam2/Vam2.xls:Start
     type: 1
-    textLength: 121
+    textLength: 144
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
