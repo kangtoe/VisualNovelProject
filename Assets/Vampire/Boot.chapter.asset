@@ -492,9 +492,63 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - flag1
+      - Bool
+      - FALSE
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - flag2
+      - Bool
+      - FALSE
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - flag3
+      - Bool
+      - FALSE
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - flag4
+      - Bool
+      - FALSE
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - flag5
+      - Bool
+      - FALSE
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - flag6
+      - Bool
+      - FALSE
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Vampire/Vampire.xls:Param
     type: 1
-    textLength: 22
+    textLength: 106
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
