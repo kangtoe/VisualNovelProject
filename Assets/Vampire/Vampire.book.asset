@@ -34,6 +34,119 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 1
+      debugIndex: 6
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uB2C8\uD2F0 \uC52C (\uC2A4\uCF00\uC904\uB9C1 \uAC8C\uC784) \uC5D0\uC11C
+        \uBCC0\uC218\uB4E4 \uAC00\uC9C0\uACE0 \uC640\uC11C \uD30C\uB78C\uC5D0 \uC800\uC7A5\uD558\uAE30"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 16
+      strings:
+      - If
+      - flag==0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 18
+      strings:
+      - Jump
+      - '*0page'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 20
+      strings:
+      - ElseIf
+      - flag==1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 22
+      strings:
+      - Jump
+      - '*1page'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 24
+      strings:
+      - ElseIf
+      - flag==2
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 26
+      strings:
+      - Jump
+      - '*2page'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 28
+      strings:
+      - EndIf
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 35
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uD604\uC7AC \uD30C\uB78C(\uBCC0\uC218) \uB4E4\uC744 \uB4E4\uACE0 \uC720\uB2C8\uD2F0
+        \uC52C (\uC2A4\uCF00\uC904\uB9C1 \uAC8C\uC784) \uC73C\uB85C \uC804\uD658\uD558\uAE30"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Vampire/Vampire.xls:Start
+    type: 1
+    textLength: 213
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 0}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
       debugIndex: 2
       strings:
       - Wait
@@ -2982,14 +3095,22 @@ MonoBehaviour:
     - rowIndex: 189
       debugIndex: 373
       strings:
-      - Jump
-      - '*1page'
+      - Param
+      - flag=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    name: Assets/Vampire/Vampire.xls:Start
+    - rowIndex: 190
+      debugIndex: 375
+      strings:
+      - Jump
+      - '*Start'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Vampire/Vampire.xls:0page
     type: 1
-    textLength: 5132
+    textLength: 5143
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -3028,9 +3149,41 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 2
+      debugIndex: 4
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC774\uC81C \uC2A4\uCF00\uC904\uB9C1 \uAC8C\uC784\uC73C\uB85C \uD5A5\uD574\uC57C
+        \uD568"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 6
+      strings:
+      - Param
+      - flag=2
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 8
+      strings:
+      - Jump
+      - '*Start'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Vampire/Vampire.xls:1page
     type: 1
-    textLength: 72
+    textLength: 111
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -3069,9 +3222,32 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 2
+      debugIndex: 4
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC2A4\uCF00\uC904\uB9C1 \uAC8C\uC784\uC744 \uB05D\uB0B4\uACE0 \uB3C4\uCC29\uD574\uC57C
+        \uD568"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 6
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Vampire/Vampire.xls:2page
     type: 1
-    textLength: 72
+    textLength: 102
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -3597,60 +3773,60 @@ MonoBehaviour:
     - rowIndex: 1
       debugIndex: 1
       strings:
-      - flag1
-      - Bool
-      - FALSE
+      - flag
+      - Int
+      - 0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 2
       debugIndex: 2
       strings:
-      - flag2
-      - Bool
-      - FALSE
+      - money
+      - Int
+      - 0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 3
       debugIndex: 3
       strings:
-      - flag3
-      - Bool
-      - FALSE
+      - stress
+      - Int
+      - 0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
       strings:
-      - flag4
-      - Bool
-      - FALSE
+      - love
+      - Int
+      - 0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 5
       debugIndex: 5
       strings:
-      - flag5
-      - Bool
-      - FALSE
+      - blood
+      - Float
+      - 0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 6
       debugIndex: 6
       strings:
-      - flag6
-      - Bool
-      - FALSE
+      - day
+      - Int
+      - 0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:Param
     type: 1
-    textLength: 106
+    textLength: 75
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -3730,6 +3906,300 @@ MonoBehaviour:
     name: Assets/Vampire/Vampire.xls:Macro
     type: 1
     textLength: 66
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 0}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uB2C8\uD2F0 \uC52C (\uC2A4\uCF00\uC904\uB9C1 \uAC8C\uC784) \uC5D0\uC11C
+        \uBCC0\uC218\uB4E4 \uAC00\uC9C0\uACE0 \uC640\uC11C \uD30C\uB78C\uC5D0 \uC800\uC7A5\uD558\uAE30"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 11
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 12
+      debugIndex: 12
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 13
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 14
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 15
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - If
+      - flag==0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
+      strings:
+      - Jump
+      - '*0page'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 19
+      debugIndex: 19
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 20
+      debugIndex: 20
+      strings:
+      - ElseIf
+      - flag==1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 21
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 22
+      strings:
+      - Jump
+      - '*1page'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 23
+      debugIndex: 23
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 24
+      debugIndex: 24
+      strings:
+      - ElseIf
+      - flag==2
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 25
+      debugIndex: 25
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 26
+      debugIndex: 26
+      strings:
+      - Jump
+      - '*2page'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 27
+      debugIndex: 27
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 28
+      debugIndex: 28
+      strings:
+      - EndIf
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 29
+      debugIndex: 29
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 30
+      debugIndex: 30
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 31
+      debugIndex: 31
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 32
+      debugIndex: 32
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 33
+      debugIndex: 33
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 34
+      debugIndex: 34
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 35
+      debugIndex: 35
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uD604\uC7AC \uD30C\uB78C(\uBCC0\uC218) \uB4E4\uC744 \uB4E4\uACE0 \uC720\uB2C8\uD2F0
+        \uC52C (\uC2A4\uCF00\uC904\uB9C1 \uAC8C\uC784) \uC73C\uB85C \uC804\uD658\uD558\uAE30"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Vampire/Vampire.xls:Start
+    type: 1
+    textLength: 213
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -7850,14 +8320,28 @@ MonoBehaviour:
     - rowIndex: 373
       debugIndex: 373
       strings:
-      - Jump
-      - '*1page'
+      - Param
+      - flag=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    name: Assets/Vampire/Vampire.xls:Start
+    - rowIndex: 374
+      debugIndex: 374
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 375
+      debugIndex: 375
+      strings:
+      - Jump
+      - '*Start'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Vampire/Vampire.xls:0page
     type: 1
-    textLength: 5132
+    textLength: 5143
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -7900,9 +8384,59 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC774\uC81C \uC2A4\uCF00\uC904\uB9C1 \uAC8C\uC784\uC73C\uB85C \uD5A5\uD574\uC57C
+        \uD568"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - Param
+      - flag=2
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings:
+      - Jump
+      - '*Start'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Vampire/Vampire.xls:1page
     type: 1
-    textLength: 72
+    textLength: 111
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -7945,9 +8479,44 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC2A4\uCF00\uC904\uB9C1 \uAC8C\uC784\uC744 \uB05D\uB0B4\uACE0 \uB3C4\uCC29\uD574\uC57C
+        \uD568"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Vampire/Vampire.xls:2page
     type: 1
-    textLength: 72
+    textLength: 102
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
