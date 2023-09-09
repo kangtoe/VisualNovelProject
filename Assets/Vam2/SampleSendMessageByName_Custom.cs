@@ -6,8 +6,7 @@ using System.Collections;
 /// <summary>
 /// ADV用SendMessageByNameコマンドから送られたメッセージを受け取る処理のサンプル
 /// </summary>
-[AddComponentMenu("Utage/ADV/Examples/SampleSendMessageByName")]
-public class SampleSendMessageByNameCustom : MonoBehaviour, IAdvSaveData
+public class SampleSendMessageByName_Custom : MonoBehaviour, IAdvSaveData
 {
 	//Testという処理を呼ぶ。引数にはAdvCommandSendMessageByNameを持つ
 	void Test(AdvCommandSendMessageByName command)
