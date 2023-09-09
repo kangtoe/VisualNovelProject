@@ -34,8 +34,11 @@ public class CustomCommand : AdvCustomCommandManager
 			case "DebugLog":
 				command = new AdvCommand_DebugLog(row);
 				break;
-			case "Save":
+			case "ParamSave":
 				command = new AdvCommand_Save(row);
+				break;
+			case "ParamLoad":
+				command = new AdvCommand_Load(row);
 				break;
 		}
 	}
@@ -82,8 +85,46 @@ public class AdvCommand_Save : AdvCommand
 		{
 			Debug.Log("!engine.Param.IsInit");
 			return;
-		} 				
+		}
 
-		var hoge = engine.Param.GetParameter("hoge");
+		Debug.Log("ParamSave");
+		ExtraSave.ChapterProgress = (int)engine.Param.GetParameter("flag");
+		ExtraSave.Money = (int)engine.Param.GetParameter("money");
+		ExtraSave.Stress = (int)engine.Param.GetParameter("stress");
+		ExtraSave.love = (int)engine.Param.GetParameter("love");
+		ExtraSave.Blood = (float)engine.Param.GetParameter("blood");
+		ExtraSave.DayProgress = (int)engine.Param.GetParameter("day");
+	}
+}
+
+public class AdvCommand_Load : AdvCommand
+{
+	//string log;
+
+	public AdvCommand_Load(StringGridRow row) : base(row)
+	{
+		//コンストラクタでParseすると、インポート時にエラーがでる
+
+		//「Text」列の文字列を取得
+		//this.log = ParseCell<string>(AdvColumnName.Text);
+	}
+
+	//コマンド実行
+	public override void DoCommand(AdvEngine engine)
+	{
+		// 아직 파라메터 값 불러오는 중!
+		if (!engine.Param.IsInit)
+		{
+			Debug.Log("!engine.Param.IsInit");
+			return;
+		}
+
+		Debug.Log("ParamLoad");
+		engine.Param.SetParameter("flag", ExtraSave.ChapterProgress);
+		engine.Param.SetParameter("money", ExtraSave.Money);
+		engine.Param.SetParameter("stress", ExtraSave.Stress);
+		engine.Param.SetParameter("love", ExtraSave.love);
+		engine.Param.SetParameter("blood", ExtraSave.Blood);
+		engine.Param.SetParameter("day", ExtraSave.DayProgress);
 	}
 }
