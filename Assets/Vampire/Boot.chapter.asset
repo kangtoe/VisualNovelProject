@@ -258,7 +258,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - 1.8
+      - 1
       - 
       - CG1.png
       isEmpty: 0
@@ -266,7 +266,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:Texture
     type: 1
-    textLength: 155
+    textLength: 153
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
