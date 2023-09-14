@@ -3341,10 +3341,10 @@ MonoBehaviour:
       - 
       - "\uBB34\uD45C\uC815"
       - 
-      - -500
+      - -470
       - 
       - 
-      - .5
+      - .47
       - 
       - "\uC774\uB9AC\uC544/\uBB34\uD45C\uC815.png"
       isEmpty: 0
@@ -3357,10 +3357,10 @@ MonoBehaviour:
       - 
       - "\uBBF8\uC18C"
       - 
-      - -500
+      - -470
       - 
       - 
-      - .5
+      - .47
       - 
       - "\uC774\uB9AC\uC544/\uBBF8\uC18C.png"
       isEmpty: 0
@@ -3373,10 +3373,10 @@ MonoBehaviour:
       - 
       - "\uC6C3\uC74C"
       - 
-      - -500
+      - -470
       - 
       - 
-      - .5
+      - .47
       - 
       - "\uC774\uB9AC\uC544/\uC6C3\uC74C.png"
       isEmpty: 0
@@ -3389,10 +3389,10 @@ MonoBehaviour:
       - 
       - "\uADF8\uB298"
       - 
-      - -500
+      - -470
       - 
       - 
-      - .5
+      - .47
       - 
       - "\uC774\uB9AC\uC544/\uADF8\uB298.png"
       isEmpty: 0
@@ -3405,10 +3405,10 @@ MonoBehaviour:
       - 
       - "\uB180\uB78C"
       - 
-      - -500
+      - -470
       - 
       - 
-      - .5
+      - .47
       - 
       - "\uC774\uB9AC\uC544/\uB180\uB78C.png"
       isEmpty: 0
@@ -3421,10 +3421,10 @@ MonoBehaviour:
       - 
       - "\uB534\uCCAD"
       - 
-      - -500
+      - -470
       - 
       - 
-      - .5
+      - .47
       - 
       - "\uC774\uB9AC\uC544/\uB534\uCCAD.png"
       isEmpty: 0
@@ -3437,10 +3437,10 @@ MonoBehaviour:
       - 
       - "\uC18C\uB9AC\uC9C0\uB984"
       - 
-      - -500
+      - -470
       - 
       - 
-      - .5
+      - .47
       - 
       - "\uC774\uB9AC\uC544/\uC18C\uB9AC\uC9C0\uB984.png"
       isEmpty: 0
@@ -3453,10 +3453,10 @@ MonoBehaviour:
       - 
       - "\uB178\uB824\uBD04"
       - 
-      - -500
+      - -470
       - 
       - 
-      - .5
+      - .47
       - 
       - "\uC774\uB9AC\uC544/\uB178\uB824\uBD04.png"
       isEmpty: 0
@@ -3469,10 +3469,10 @@ MonoBehaviour:
       - 
       - "\uB178\uB824\uBD04 \uD64D\uC870"
       - 
-      - -500
+      - -470
       - 
       - 
-      - .5
+      - .47
       - 
       - "\uC774\uB9AC\uC544/\uB178\uB824\uBD04 \uD64D\uC870.png"
       isEmpty: 0
@@ -3480,7 +3480,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:Character
     type: 1
-    textLength: 337
+    textLength: 346
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
