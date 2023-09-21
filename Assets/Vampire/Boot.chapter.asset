@@ -476,9 +476,19 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - "\uC74C\uC0B0"
+      - 
+      - Bgm
+      - Gloomy.mp3
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Vampire/Vampire.xls:Sound
     type: 1
-    textLength: 37
+    textLength: 52
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:

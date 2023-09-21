@@ -22040,7 +22040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prevView: {fileID: 0}
-  bgm: {fileID: 0}
+  bgm: {fileID: 8300000, guid: 328fa142b16e8ed4c92afccb1c92fd92, type: 3}
   introTime: 0
   isStopBgmIfNoneBgm: 0
   onOpen:
