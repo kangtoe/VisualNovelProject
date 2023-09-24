@@ -82,6 +82,14 @@ MonoBehaviour:
       debugIndex: 5
       strings:
       - 
+      - Schedule
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 6
+      strings:
+      - 
       - 
       - 
       - 
@@ -93,8 +101,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 6
+    - rowIndex: 6
+      debugIndex: 7
       strings:
       - EndScenario
       isEmpty: 0
@@ -102,7 +110,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vam2/Vam2.xls:Start
     type: 1
-    textLength: 144
+    textLength: 152
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -549,6 +557,14 @@ MonoBehaviour:
       debugIndex: 5
       strings:
       - 
+      - Schedule
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - 
       - 
       - 
       - 
@@ -560,8 +576,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - EndScenario
       isEmpty: 0
@@ -569,6 +585,6 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vam2/Vam2.xls:Start
     type: 1
-    textLength: 144
+    textLength: 152
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
