@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Utage;
 
 public class CustomCommand : AdvCustomCommandManager
@@ -39,6 +40,9 @@ public class CustomCommand : AdvCustomCommandManager
 				break;
 			case "ParamLoad":
 				command = new AdvCommand_Load(row);
+				break;
+			case "ChangeScene":
+				command = new AdvCommand_ChangeScene(row);
 				break;
 		}
 	}
@@ -127,4 +131,24 @@ public class AdvCommand_Load : AdvCommand
 		engine.Param.SetParameter("blood", ExtraSave.Blood);
 		engine.Param.SetParameter("day", ExtraSave.DayProgress);
 	}
+}
+
+public class AdvCommand_ChangeScene : AdvCommand
+{
+	string sceneName;	
+
+	public AdvCommand_ChangeScene(StringGridRow row) : base(row)
+	{
+		//コンストラクタでParseすると、インポート時にエラーがでる
+
+		//「Text」列の文字列を取得
+		sceneName = ParseCell<string>(AdvColumnName.Arg1);		
+	}
+
+	//コマンド実行
+	public override void DoCommand(AdvEngine engine)
+	{
+		Debug.Log("ChangeScene : " + sceneName);
+		SceneManager.LoadScene(sceneName);
+	}	
 }
