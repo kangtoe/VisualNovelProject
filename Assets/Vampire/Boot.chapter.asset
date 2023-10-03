@@ -252,6 +252,21 @@ MonoBehaviour:
     - rowIndex: 3
       debugIndex: 3
       strings:
+      - Black
+      - Event
+      - 
+      - 
+      - 
+      - 
+      - 1
+      - 
+      - Black.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
       - CG1
       - Event
       - 
@@ -264,9 +279,24 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - CG2
+      - Event
+      - 
+      - 
+      - 
+      - 
+      - 1
+      - 
+      - CG2.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Vampire/Vampire.xls:Texture
     type: 1
-    textLength: 153
+    textLength: 189
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
