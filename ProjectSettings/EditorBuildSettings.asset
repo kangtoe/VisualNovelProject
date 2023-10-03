@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Vampire/Vampire.unity
     guid: 1c4c2427b88ea494b81b84a556bfe1d9
   - enabled: 1
-    path: Assets/Schedule.unity
+    path: Assets/Schedule/Schedule.unity
     guid: d8747a338f19c8743a4cf79b26fefba0
   m_configObjects: {}
