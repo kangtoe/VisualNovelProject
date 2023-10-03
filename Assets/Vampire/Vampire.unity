@@ -20760,7 +20760,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523651717}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3388baca6ee49c448a8d53b7ebb080ce, type: 3}
   m_Name: 
@@ -20790,7 +20790,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 54c41cc2273a6d54591bf972b4098fb4, type: 3}
+    m_Font: {fileID: 12800000, guid: 0270586960ded004da6f7e48cfea55aa, type: 3}
     m_FontSize: 34
     m_FontStyle: 0
     m_BestFit: 0
@@ -20846,7 +20846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   space: -1
-  letterSpaceSize: 2
+  letterSpaceSize: 1.2
   wordWrap: -1
   lengthOfView: -1
   textSettings: {fileID: 11400000, guid: 5d8262d9c1d9c954c8c0404515c05493, type: 2}

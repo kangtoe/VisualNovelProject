@@ -486,9 +486,83 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - "\uB0AE\uC740\uB465"
+      - 
+      - Se
+      - "\uB0AE\uC740\uB465.wav"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - "\uB192\uC740\uB465"
+      - 
+      - Se
+      - "\uB192\uC740\uB465.wav"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings:
+      - "\uBBF8\uC2A4\uD14C\uB9AC"
+      - 
+      - Se
+      - "\uBBF8\uC2A4\uD14C\uB9AC.mp3"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings:
+      - "\uBC1C\uC18C\uB9AC"
+      - 
+      - Se
+      - "\uBC1C\uC18C\uB9AC.mp3"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings:
+      - "\uD788\uD2B8"
+      - 
+      - Se
+      - "\uD788\uD2B8.mp3"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Vampire/Vampire.xls:Sound
     type: 1
-    textLength: 52
+    textLength: 112
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
