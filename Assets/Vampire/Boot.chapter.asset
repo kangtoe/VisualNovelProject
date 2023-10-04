@@ -245,12 +245,159 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 2
       debugIndex: 2
-      strings: []
-      isEmpty: 1
+      strings:
+      - "\uAC70\uC2E4"
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 1.3
+      - 
+      - "\uAC70\uC2E4.png"
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 3
       debugIndex: 3
+      strings:
+      - "\uD604\uC6B0\uBC29"
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 1.3
+      - 
+      - "\uD604\uC6B0\uBC29.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - "\uD070\uBC29"
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 1.3
+      - 
+      - "\uD070\uBC29.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - "\uBC29\uBCF5\uB3C4"
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 1.3
+      - 
+      - "\uBC29\uBCF5\uB3C4.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - "\uBD80\uC5CC"
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 1.3
+      - 
+      - "\uBD80\uC5CC.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - "\uD604\uAD00"
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 1.3
+      - 
+      - "\uD604\uAD00.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings:
+      - "\uD654\uC7A5\uC2E4"
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 1.3
+      - 
+      - "\uD654\uC7A5\uC2E4.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings:
+      - "\uACF5\uC6D0\uCE74\uD398"
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 1.3
+      - 
+      - "\uACF5\uC6D0\uCE74\uD398.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings:
+      - "\uAD50\uC2E4\uB0B4\uBD80"
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 1.3
+      - 
+      - "\uAD50\uC2E4\uB0B4\uBD80.png"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 11
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 12
+      debugIndex: 12
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 13
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 14
       strings:
       - Black
       - Event
@@ -264,8 +411,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
+    - rowIndex: 15
+      debugIndex: 15
       strings:
       - Logo
       - Event
@@ -279,8 +426,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 16
+      debugIndex: 16
       strings:
       - CG1
       - Event
@@ -294,8 +441,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 17
+      debugIndex: 17
       strings:
       - CG2
       - Event
@@ -311,7 +458,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:Texture
     type: 1
-    textLength: 207
+    textLength: 338
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
