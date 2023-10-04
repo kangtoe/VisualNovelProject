@@ -4374,9 +4374,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.00010702014
+    y: 0
     width: 1
-    height: 0.99978596
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -12460,7 +12460,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Copyright 2023. Team Vampire all rights reserved.
+  m_Text: Copyright 2023. Souffle Software all rights reserved.
 --- !u!222 &834759886
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20790,7 +20790,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0270586960ded004da6f7e48cfea55aa, type: 3}
+    m_Font: {fileID: 12800000, guid: 54c41cc2273a6d54591bf972b4098fb4, type: 3}
     m_FontSize: 34
     m_FontStyle: 0
     m_BestFit: 0
@@ -21299,9 +21299,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.00010702014
+    y: 0
     width: 1
-    height: 0.99978596
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -23825,7 +23825,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1733304332
 RectTransform:
   m_ObjectHideFlags: 0
