@@ -189,20 +189,20 @@ MonoBehaviour:
       strings:
       - 
       - 
-      - "\uB178\uB824\uBD04 \uD64D\uC870"
+      - "\uB178\uB824\uBD04\uD64D\uC870"
       - 
       - -470
       - 
       - 
       - .47
       - 
-      - "\uC774\uB9AC\uC544/\uB178\uB824\uBD04 \uD64D\uC870.png"
+      - "\uC774\uB9AC\uC544/\uB178\uB824\uBD04\uD64D\uC870.png"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:Character
     type: 1
-    textLength: 346
+    textLength: 344
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
