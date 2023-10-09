@@ -34,55 +34,62 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 1
-      debugIndex: 16
+      debugIndex: 3
+      strings:
+      - ParamLoad
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 6
       strings:
       - If
       - flag==0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 2
-      debugIndex: 18
+    - rowIndex: 3
+      debugIndex: 8
       strings:
       - Jump
       - '*0page'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 3
-      debugIndex: 20
+    - rowIndex: 4
+      debugIndex: 10
       strings:
       - ElseIf
       - flag==1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 22
+    - rowIndex: 5
+      debugIndex: 12
       strings:
       - Jump
       - '*1page'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 24
+    - rowIndex: 6
+      debugIndex: 14
       strings:
       - ElseIf
       - flag==2
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 26
+    - rowIndex: 7
+      debugIndex: 16
       strings:
       - Jump
       - '*2page'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 28
+    - rowIndex: 8
+      debugIndex: 18
       strings:
       - EndIf
       isEmpty: 0
@@ -90,7 +97,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:Start
     type: 1
-    textLength: 136
+    textLength: 145
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -3347,6 +3354,13 @@ MonoBehaviour:
     - rowIndex: 218
       debugIndex: 409
       strings:
+      - ParamSave
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 219
+      debugIndex: 411
+      strings:
       - Jump
       - '*Start'
       isEmpty: 0
@@ -3354,7 +3368,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:0page
     type: 1
-    textLength: 5275
+    textLength: 5284
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -7224,6 +7238,21 @@ MonoBehaviour:
     - rowIndex: 245
       debugIndex: 487
       strings:
+      - ParamSave
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 246
+      debugIndex: 489
+      strings:
+      - ChangeScene
+      - Schedule
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 247
+      debugIndex: 491
+      strings:
       - Jump
       - '*Start'
       isEmpty: 0
@@ -7231,7 +7260,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:1page
     type: 1
-    textLength: 7456
+    textLength: 7484
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -8265,8 +8294,9 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 3
       debugIndex: 3
-      strings: []
-      isEmpty: 1
+      strings:
+      - ParamLoad
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
@@ -8283,8 +8313,10 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 6
       debugIndex: 6
-      strings: []
-      isEmpty: 1
+      strings:
+      - If
+      - flag==0
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 7
@@ -8295,20 +8327,33 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 8
       debugIndex: 8
-      strings: []
-      isEmpty: 1
+      strings:
+      - Jump
+      - '*0page'
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 9
       debugIndex: 9
-      strings: []
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 10
       debugIndex: 10
-      strings: []
-      isEmpty: 1
+      strings:
+      - ElseIf
+      - flag==1
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 11
@@ -8320,16 +8365,9 @@ MonoBehaviour:
     - rowIndex: 12
       debugIndex: 12
       strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      isEmpty: 1
+      - Jump
+      - '*1page'
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 13
@@ -8340,8 +8378,10 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 14
       debugIndex: 14
-      strings: []
-      isEmpty: 1
+      strings:
+      - ElseIf
+      - flag==2
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 15
@@ -8353,92 +8393,13 @@ MonoBehaviour:
     - rowIndex: 16
       debugIndex: 16
       strings:
-      - If
-      - flag==0
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 17
-      debugIndex: 17
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 18
-      debugIndex: 18
-      strings:
-      - Jump
-      - '*0page'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 19
-      debugIndex: 19
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 20
-      debugIndex: 20
-      strings:
-      - ElseIf
-      - flag==1
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 21
-      debugIndex: 21
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 22
-      debugIndex: 22
-      strings:
-      - Jump
-      - '*1page'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 23
-      debugIndex: 23
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 24
-      debugIndex: 24
-      strings:
-      - ElseIf
-      - flag==2
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 25
-      debugIndex: 25
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 26
-      debugIndex: 26
-      strings:
       - Jump
       - '*2page'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 27
-      debugIndex: 27
+    - rowIndex: 17
+      debugIndex: 17
       strings:
       - 
       - 
@@ -8452,8 +8413,8 @@ MonoBehaviour:
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 28
-      debugIndex: 28
+    - rowIndex: 18
+      debugIndex: 18
       strings:
       - EndIf
       isEmpty: 0
@@ -8461,7 +8422,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:Start
     type: 1
-    textLength: 136
+    textLength: 145
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -12908,6 +12869,19 @@ MonoBehaviour:
     - rowIndex: 409
       debugIndex: 409
       strings:
+      - ParamSave
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 410
+      debugIndex: 410
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 411
+      debugIndex: 411
+      strings:
       - Jump
       - '*Start'
       isEmpty: 0
@@ -12915,7 +12889,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:0page
     type: 1
-    textLength: 5275
+    textLength: 5284
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -19715,6 +19689,33 @@ MonoBehaviour:
     - rowIndex: 487
       debugIndex: 487
       strings:
+      - ParamSave
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 488
+      debugIndex: 488
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 489
+      debugIndex: 489
+      strings:
+      - ChangeScene
+      - Schedule
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 490
+      debugIndex: 490
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 491
+      debugIndex: 491
+      strings:
       - Jump
       - '*Start'
       isEmpty: 0
@@ -19722,7 +19723,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:1page
     type: 1
-    textLength: 7456
+    textLength: 7484
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
