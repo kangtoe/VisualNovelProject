@@ -34,6 +34,13 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 1
+      debugIndex: 3
+      strings:
+      - ParamLoad
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
       debugIndex: 6
       strings:
       - If
@@ -41,7 +48,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 2
+    - rowIndex: 3
       debugIndex: 8
       strings:
       - Jump
@@ -49,7 +56,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 3
+    - rowIndex: 4
       debugIndex: 10
       strings:
       - ElseIf
@@ -57,7 +64,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
+    - rowIndex: 5
       debugIndex: 12
       strings:
       - Jump
@@ -65,7 +72,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
+    - rowIndex: 6
       debugIndex: 14
       strings:
       - ElseIf
@@ -73,7 +80,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
+    - rowIndex: 7
       debugIndex: 16
       strings:
       - Jump
@@ -81,7 +88,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
+    - rowIndex: 8
       debugIndex: 18
       strings:
       - EndIf
@@ -90,7 +97,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:Start
     type: 1
-    textLength: 136
+    textLength: 145
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -8287,8 +8294,9 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 3
       debugIndex: 3
-      strings: []
-      isEmpty: 1
+      strings:
+      - ParamLoad
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
@@ -8414,7 +8422,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:Start
     type: 1
-    textLength: 136
+    textLength: 145
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
