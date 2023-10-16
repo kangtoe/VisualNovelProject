@@ -87,7 +87,10 @@ public class UtageUguiTitle : UguiView
 		mainGame.OpenStartLabel(label);
 	}
 
-
+	public void OnGameExit()
+	{
+		Application.Quit();
+	}
 	protected virtual void OnCloseLoadChapter(string startLabel)
 	{
 		download.onClose.RemoveAllListeners();

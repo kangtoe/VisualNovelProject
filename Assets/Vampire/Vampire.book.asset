@@ -34,7 +34,41 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 1
-      debugIndex: 6
+      debugIndex: 4
+      strings:
+      - Jump
+      - '*Divider'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Vampire/Vampire.xls:Start
+    type: 1
+    textLength: 78
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 0}
+    entityIndexTbl: 
+    entityDataList: []
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 2
       strings:
       - If
       - flag==0
@@ -42,7 +76,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 2
-      debugIndex: 8
+      debugIndex: 4
       strings:
       - Jump
       - '*0page'
@@ -50,7 +84,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 3
-      debugIndex: 10
+      debugIndex: 6
       strings:
       - ElseIf
       - flag==1
@@ -58,7 +92,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
-      debugIndex: 12
+      debugIndex: 8
       strings:
       - Jump
       - '*1page'
@@ -66,7 +100,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 5
-      debugIndex: 14
+      debugIndex: 10
       strings:
       - ElseIf
       - flag==2
@@ -74,7 +108,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 6
-      debugIndex: 16
+      debugIndex: 12
       strings:
       - Jump
       - '*2page'
@@ -82,13 +116,13 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 7
-      debugIndex: 18
+      debugIndex: 14
       strings:
       - EndIf
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    name: Assets/Vampire/Vampire.xls:Start
+    name: Assets/Vampire/Vampire.xls:Divider
     type: 1
     textLength: 136
     headerRow: 0
@@ -3354,13 +3388,13 @@ MonoBehaviour:
       debugIndex: 413
       strings:
       - Jump
-      - '*Start'
+      - '*Divider'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:0page
     type: 1
-    textLength: 5269
+    textLength: 5271
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -7470,13 +7504,13 @@ MonoBehaviour:
       debugIndex: 511
       strings:
       - Jump
-      - '*Start'
+      - '*Divider'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:1page
     type: 1
-    textLength: 7791
+    textLength: 7793
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -8504,8 +8538,61 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 2
       debugIndex: 2
+      strings:
+      - 
+      isEmpty: 0
+      isCommentOut: 1
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
       strings: []
       isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - Jump
+      - '*Divider'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    name: Assets/Vampire/Vampire.xls:Start
+    type: 1
+    textLength: 87
+    headerRow: 0
+    sourceAssetInEditor: {fileID: 0}
+  - rows:
+    - rowIndex: 0
+      debugIndex: 0
+      strings:
+      - Command
+      - Arg1
+      - Arg2
+      - Arg3
+      - Arg4
+      - Arg5
+      - Arg6
+      - WaitType
+      - Text
+      - PageCtrl
+      - Voice
+      - WindowType
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - If
+      - flag==0
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 3
@@ -8516,8 +8603,10 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
-      strings: []
-      isEmpty: 1
+      strings:
+      - Jump
+      - '*0page'
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 5
@@ -8529,8 +8618,8 @@ MonoBehaviour:
     - rowIndex: 6
       debugIndex: 6
       strings:
-      - If
-      - flag==0
+      - ElseIf
+      - flag==1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -8544,7 +8633,7 @@ MonoBehaviour:
       debugIndex: 8
       strings:
       - Jump
-      - '*0page'
+      - '*1page'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -8567,7 +8656,7 @@ MonoBehaviour:
       debugIndex: 10
       strings:
       - ElseIf
-      - flag==1
+      - flag==2
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -8581,7 +8670,7 @@ MonoBehaviour:
       debugIndex: 12
       strings:
       - Jump
-      - '*1page'
+      - '*2page'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -8594,48 +8683,11 @@ MonoBehaviour:
     - rowIndex: 14
       debugIndex: 14
       strings:
-      - ElseIf
-      - flag==2
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 15
-      debugIndex: 15
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 16
-      debugIndex: 16
-      strings:
-      - Jump
-      - '*2page'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 17
-      debugIndex: 17
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 18
-      debugIndex: 18
-      strings:
       - EndIf
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    name: Assets/Vampire/Vampire.xls:Start
+    name: Assets/Vampire/Vampire.xls:Divider
     type: 1
     textLength: 136
     headerRow: 0
@@ -13115,13 +13167,13 @@ MonoBehaviour:
       debugIndex: 413
       strings:
       - Jump
-      - '*Start'
+      - '*Divider'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:0page
     type: 1
-    textLength: 5269
+    textLength: 5271
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -18679,13 +18731,13 @@ MonoBehaviour:
       debugIndex: 511
       strings:
       - Jump
-      - '*Start'
+      - '*Divider'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:1page
     type: 1
-    textLength: 7791
+    textLength: 7793
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
