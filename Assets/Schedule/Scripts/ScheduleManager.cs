@@ -2,13 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ScheduleType
-{ 
-    Morning,
-    Day,
-    Night
-}
-
 public class ScheduleManager : MonoBehaviour
 {
     public static ScheduleManager Instance
@@ -40,6 +33,30 @@ public class ScheduleManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public RectTransform AddSechdule(ScheduleEntity entity)
+    {
+        if (currMorning is null)
+        {
+            currMorning = entity;
+            return morningScheduleTf;
+        }
+        else if (currDay is null)
+        {
+            currDay = entity;
+            return dayScheduleTf;
+        }
+        else if (currNight is null)
+        {
+            currNight = entity;
+            return nightScheduleTf;
+        }
+        else
+        {
+            Debug.Log("schedule full!");
+            return null;
+        }
     }
 
     // 버튼 - 스케쥴 확정 & 실행
