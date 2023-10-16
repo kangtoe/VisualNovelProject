@@ -41,6 +41,9 @@ public class CustomCommand : AdvCustomCommandManager
 			case "ParamLoad":
 				command = new AdvCommand_Load(row);
 				break;
+			case "ParamClear":
+				command = new AdvCommand_ParamClear(row);
+				break;
 			case "ChangeScene":
 				command = new AdvCommand_ChangeScene(row);
 				break;
@@ -130,6 +133,32 @@ public class AdvCommand_Load : AdvCommand
 		engine.Param.SetParameter("love", ExtraSave.love);
 		engine.Param.SetParameter("blood", ExtraSave.Blood);
 		engine.Param.SetParameter("day", ExtraSave.DayProgress);
+	}
+}
+
+public class AdvCommand_ParamClear : AdvCommand
+{
+	public AdvCommand_ParamClear(StringGridRow row) : base(row)
+	{
+		//コンストラクタでParseすると、インポート時にエラーがでる				
+	}
+	
+	public override void DoCommand(AdvEngine engine)
+	{
+		// 아직 파라메터 값 불러오는 중!
+		if (!engine.Param.IsInit)
+		{
+			Debug.Log("!engine.Param.IsInit");
+			return;
+		}
+
+		Debug.Log("ParamClear");
+		ExtraSave.ChapterProgress = 0;
+		ExtraSave.Money = 0;
+		ExtraSave.Stress = 0;
+		ExtraSave.love = 0;
+		ExtraSave.Blood = 0;
+		ExtraSave.DayProgress = 0;
 	}
 }
 
