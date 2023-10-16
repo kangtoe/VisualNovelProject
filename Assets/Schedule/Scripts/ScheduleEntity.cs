@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ScheduleEntity : MonoBehaviour
-{
-    public ScheduleType type;
+{    
+    public GameObject selectPreviewObj;
+    List<GameObject> spwanedPreviewObjList = new List<GameObject>();
 
+    [Space]
     public int stress;
     public int money;
     public int favor;
@@ -28,9 +30,12 @@ public class ScheduleEntity : MonoBehaviour
 
     public void DeselectSchedule()
     {
-        StopAllCoroutines();
-
-        StartCoroutine(SmoothChange(origonSize, origonPos));
+        foreach (GameObject go in spwanedPreviewObjList)
+        {
+            // TODO : 오브젝트 페이드 아웃 후 삭제
+            Destroy(go);
+        }
+        spwanedPreviewObjList.Clear();        
     }
 
     public void SelectSchedule()
@@ -41,38 +46,21 @@ public class ScheduleEntity : MonoBehaviour
             return;
         }
 
-        Vector2 targetSize;
-        Vector2 targetPos;
+        GameObject go = Instantiate(selectPreviewObj, transform.root);
+        go.SetActive(true);
+        spwanedPreviewObjList.Add(go);
+        RectTransform rt = go.GetComponent<RectTransform>();
 
-        switch (type)
-        {
-            case ScheduleType.Morning:
-                targetSize = ScheduleManager.morningScheduleTf.sizeDelta;
-                targetPos = GetGlobalAnchoredPosition(ScheduleManager.morningScheduleTf);
-                ScheduleManager.currMorning?.DeselectSchedule();
-                ScheduleManager.currMorning = this;
-                break;
-            case ScheduleType.Day:
-                targetSize = ScheduleManager.dayScheduleTf.sizeDelta;
-                targetPos = ScheduleManager.dayScheduleTf.anchoredPosition;
-                ScheduleManager.currDay?.DeselectSchedule();
-                ScheduleManager.currDay = this;
-                break;
-            case ScheduleType.Night:
-                targetSize = ScheduleManager.nightScheduleTf.sizeDelta;
-                targetPos = GetGlobalAnchoredPosition(ScheduleManager.nightScheduleTf);                    
-                ScheduleManager.currNight?.DeselectSchedule();
-                ScheduleManager.currNight = this;
-                break;
-            default:
-                Debug.Log("type error : " + type);
-                return;
-        }
+        RectTransform targetRt = ScheduleManager.AddSechdule(this);
+        if (!targetRt) return;
+        
+        Vector2 targetSize = targetRt.sizeDelta;
+        Vector2 targetPos = targetRt.anchoredPosition;
 
-        StartCoroutine(SmoothChange(targetSize, targetPos));
+        StartCoroutine(SmoothChange(rt, targetSize, targetPos));
     }    
 
-    IEnumerator SmoothChange(Vector2 targetSize, Vector2 TargetPos)
+    IEnumerator SmoothChange(RectTransform rt, Vector2 targetSize, Vector2 TargetPos)
     {
         float duration = 0.5f;
         float t = 0;
@@ -105,22 +93,17 @@ public class ScheduleEntity : MonoBehaviour
         Vector2 originMin = rectTransform.anchorMin;
         Vector2 originMax = rectTransform.anchorMin;
 
-        rectTransform.parent = rectTransform.root;
+        rectTransform.SetParent(rectTransform.root);
         rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
         rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
 
         Vector3 globalAnchoredPosition = rectTransform.anchoredPosition;
+        Debug.Log(rectTransform.name + ": globalAnchoredPosition =" + globalAnchoredPosition);
 
-        rectTransform.parent = originPa;
+        rectTransform.SetParent(originPa);        
         rectTransform.anchorMin = originMin;
         rectTransform.anchorMin = originMax;
 
         return globalAnchoredPosition;
     }
-
-    //
-    //public Vector2 GetRelativeAnchoredPosition()
-    //{ 
-    
-    //}
 }
