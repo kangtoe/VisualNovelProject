@@ -75,7 +75,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 1
-      debugIndex: 2
+      debugIndex: 5
       strings:
       - If
       - flag==0
@@ -83,7 +83,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 2
-      debugIndex: 4
+      debugIndex: 7
       strings:
       - Jump
       - '*0page'
@@ -91,7 +91,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 3
-      debugIndex: 6
+      debugIndex: 9
       strings:
       - ElseIf
       - flag==1
@@ -99,7 +99,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
-      debugIndex: 8
+      debugIndex: 11
       strings:
       - Jump
       - '*1page'
@@ -107,7 +107,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 5
-      debugIndex: 10
+      debugIndex: 13
       strings:
       - ElseIf
       - flag==2
@@ -115,7 +115,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 6
-      debugIndex: 12
+      debugIndex: 15
       strings:
       - Jump
       - '*2page'
@@ -123,7 +123,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 7
-      debugIndex: 14
+      debugIndex: 17
       strings:
       - EndIf
       isEmpty: 0
@@ -1512,7 +1512,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "\uC544~ \uC544\uAE4C \uC800 \uAE38\uBAA9\uC5D0\uC11C? \uADF8\uB807\uC9C0
+      - "\uC544~ \uC544\uAE4C \uC800\uAE30 \uAE38\uBAA9\uC5D0\uC11C? \uADF8\uB807\uC9C0
         \uC544\uB9C8."
       - 
       - 11
@@ -3415,7 +3415,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 213
-      debugIndex: 402
+      debugIndex: 403
       strings:
       - Param
       - flag=1
@@ -3423,7 +3423,16 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 214
-      debugIndex: 404
+      debugIndex: 406
+      strings:
+      - Video
+      - PV
+      - UICamera
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 215
+      debugIndex: 409
       strings:
       - Jump
       - '*Divider'
@@ -3432,7 +3441,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:0page
     type: 1
-    textLength: 5313
+    textLength: 5329
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -7729,7 +7738,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 270
-      debugIndex: 515
+      debugIndex: 516
       strings:
       - Param
       - flag=2
@@ -7737,29 +7746,22 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 271
-      debugIndex: 516
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 272
-      debugIndex: 517
+      debugIndex: 519
       strings:
       - ParamSave
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 273
-      debugIndex: 519
+    - rowIndex: 272
+      debugIndex: 522
       strings:
       - ChangeScene
       - Schedule
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 274
-      debugIndex: 521
+    - rowIndex: 273
+      debugIndex: 525
       strings:
       - Jump
       - '*Divider'
@@ -7768,7 +7770,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:1page
     type: 1
-    textLength: 8054
+    textLength: 8043
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -8855,55 +8857,75 @@ MonoBehaviour:
     - rowIndex: 2
       debugIndex: 2
       strings:
+      - 
+      isEmpty: 0
+      isCommentOut: 1
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      isEmpty: 0
+      isCommentOut: 1
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
       - If
       - flag==0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 3
-      debugIndex: 3
+    - rowIndex: 6
+      debugIndex: 6
       strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
+    - rowIndex: 7
+      debugIndex: 7
       strings:
       - Jump
       - '*0page'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 8
+      debugIndex: 8
       strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
+    - rowIndex: 9
+      debugIndex: 9
       strings:
       - ElseIf
       - flag==1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
+    - rowIndex: 10
+      debugIndex: 10
       strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 8
+    - rowIndex: 11
+      debugIndex: 11
       strings:
       - Jump
       - '*1page'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 9
-      debugIndex: 9
+    - rowIndex: 12
+      debugIndex: 12
       strings:
       - 
       - 
@@ -8917,36 +8939,36 @@ MonoBehaviour:
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 10
-      debugIndex: 10
+    - rowIndex: 13
+      debugIndex: 13
       strings:
       - ElseIf
       - flag==2
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 11
-      debugIndex: 11
+    - rowIndex: 14
+      debugIndex: 14
       strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 12
-      debugIndex: 12
+    - rowIndex: 15
+      debugIndex: 15
       strings:
       - Jump
       - '*2page'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 13
-      debugIndex: 13
+    - rowIndex: 16
+      debugIndex: 16
       strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 14
-      debugIndex: 14
+    - rowIndex: 17
+      debugIndex: 17
       strings:
       - EndIf
       isEmpty: 0
@@ -8954,7 +8976,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:Divider
     type: 1
-    textLength: 136
+    textLength: 167
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -10787,7 +10809,7 @@ MonoBehaviour:
       - 
       - 
       - 
-      - "\uC544~ \uC544\uAE4C \uC800 \uAE38\uBAA9\uC5D0\uC11C? \uADF8\uB807\uC9C0
+      - "\uC544~ \uC544\uAE4C \uC800\uAE30 \uAE38\uBAA9\uC5D0\uC11C? \uADF8\uB807\uC9C0
         \uC544\uB9C8."
       - 
       - 11
@@ -13418,19 +13440,55 @@ MonoBehaviour:
     - rowIndex: 402
       debugIndex: 402
       strings:
+      - 
+      isEmpty: 0
+      isCommentOut: 1
+      debugInfo: 
+    - rowIndex: 403
+      debugIndex: 403
+      strings:
       - Param
       - flag=1
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 403
-      debugIndex: 403
+    - rowIndex: 404
+      debugIndex: 404
       strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 404
-      debugIndex: 404
+    - rowIndex: 405
+      debugIndex: 405
+      strings:
+      - 
+      isEmpty: 0
+      isCommentOut: 1
+      debugInfo: 
+    - rowIndex: 406
+      debugIndex: 406
+      strings:
+      - Video
+      - PV
+      - UICamera
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 407
+      debugIndex: 407
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 408
+      debugIndex: 408
+      strings:
+      - 
+      isEmpty: 0
+      isCommentOut: 1
+      debugInfo: 
+    - rowIndex: 409
+      debugIndex: 409
       strings:
       - Jump
       - '*Divider'
@@ -13439,7 +13497,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:0page
     type: 1
-    textLength: 5313
+    textLength: 5359
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
@@ -19212,36 +19270,35 @@ MonoBehaviour:
     - rowIndex: 515
       debugIndex: 515
       strings:
+      - 
+      isEmpty: 0
+      isCommentOut: 1
+      debugInfo: 
+    - rowIndex: 516
+      debugIndex: 516
+      strings:
       - Param
       - flag=2
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 516
-      debugIndex: 516
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 517
       debugIndex: 517
-      strings:
-      - ParamSave
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 518
-      debugIndex: 518
       strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 518
+      debugIndex: 518
+      strings:
+      - 
+      isEmpty: 0
+      isCommentOut: 1
+      debugInfo: 
     - rowIndex: 519
       debugIndex: 519
       strings:
-      - ChangeScene
-      - Schedule
+      - ParamSave
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -19254,6 +19311,34 @@ MonoBehaviour:
     - rowIndex: 521
       debugIndex: 521
       strings:
+      - 
+      isEmpty: 0
+      isCommentOut: 1
+      debugInfo: 
+    - rowIndex: 522
+      debugIndex: 522
+      strings:
+      - ChangeScene
+      - Schedule
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 523
+      debugIndex: 523
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 524
+      debugIndex: 524
+      strings:
+      - 
+      isEmpty: 0
+      isCommentOut: 1
+      debugInfo: 
+    - rowIndex: 525
+      debugIndex: 525
+      strings:
       - Jump
       - '*Divider'
       isEmpty: 0
@@ -19261,7 +19346,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/Vampire/Vampire.xls:1page
     type: 1
-    textLength: 8054
+    textLength: 8088
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
