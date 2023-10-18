@@ -273,8 +273,16 @@ public class UtageUguiMainGame : UguiView
 		config.Open(this);
 	}
 
-	//セーブボタンが押された
-	public virtual void OnTapSave()
+    //게임 종료 후 타이틀 이동
+    public virtual void OnTapTitle()
+    {
+        Engine.EndScenario();
+        this.Close();
+        title.Open();
+    }
+
+    //セーブボタンが押された
+    public virtual void OnTapSave()
 	{
 		if (Engine.IsSceneGallery) return;
 
