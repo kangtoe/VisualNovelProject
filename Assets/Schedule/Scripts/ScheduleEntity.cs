@@ -8,9 +8,10 @@ public class ScheduleEntity : MonoBehaviour
     List<GameObject> spwanedPreviewObjList = new List<GameObject>();
 
     [Space]
-    public int stress;
-    public int money;
-    public int favor;
+    public float blood;
+    public float stress;
+    public float money;
+    public float love;
 
     RectTransform rt;
     bool isChanging = false;

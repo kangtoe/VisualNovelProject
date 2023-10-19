@@ -23,6 +23,8 @@ public class ScheduleManager : MonoBehaviour
     public ScheduleEntity currDay;
     public ScheduleEntity currNight;
 
+    ScheduleResources resource => ScheduleResources.Instance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,26 +39,35 @@ public class ScheduleManager : MonoBehaviour
 
     public RectTransform AddSechdule(ScheduleEntity entity)
     {
+        RectTransform targetUI;
+
         if (currMorning is null)
         {
             currMorning = entity;
-            return morningScheduleTf;
+            targetUI =  morningScheduleTf;
         }
         else if (currDay is null)
         {
             currDay = entity;
-            return dayScheduleTf;
+            targetUI = dayScheduleTf;
         }
         else if (currNight is null)
         {
             currNight = entity;
-            return nightScheduleTf;
+            targetUI = nightScheduleTf;
         }
         else
         {
             Debug.Log("schedule full!");
             return null;
         }
+
+        resource.adjustBlood += entity.blood;
+        resource.adjustLove += entity.love;
+        resource.adjustStress += entity.stress;
+        resource.adjustMoney += entity.money;
+        resource.PreviewUI();
+        return targetUI;
     }
 
     // 버튼 - 스케쥴 확정 & 실행
@@ -85,6 +96,8 @@ public class ScheduleManager : MonoBehaviour
             currNight.DeselectSchedule();
             currNight = null;
         }
+
+        resource.Init();
     }
 
     // 스토리 모드로 돌아가기
