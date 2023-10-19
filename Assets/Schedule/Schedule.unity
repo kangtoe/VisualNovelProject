@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 98933653}
   - component: {fileID: 98933652}
   - component: {fileID: 98933651}
+  - component: {fileID: 98933654}
   m_Layer: 5
   m_Name: Rest_Eat
   m_TagString: Untagged
@@ -396,7 +397,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 98933652}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 98933654}
+        m_TargetAssemblyTypeName: ScheduleEntity, Assembly-CSharp
+        m_MethodName: SelectSchedule
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &98933652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,6 +448,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98933649}
   m_CullTransparentMesh: 1
+--- !u!114 &98933654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98933649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d548fb3c044af7f4da1272d346318a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectPreviewObj: {fileID: 1508898249}
+  stress: 0
+  money: 0
+  favor: 0
 --- !u!1 &160545143
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,7 +496,7 @@ RectTransform:
   - {fileID: 1790014982}
   - {fileID: 66427710}
   - {fileID: 832559238}
-  m_Father: {fileID: 2146684078}
+  m_Father: {fileID: 720352009}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1115,6 +1144,7 @@ GameObject:
   - component: {fileID: 254962791}
   - component: {fileID: 254962790}
   - component: {fileID: 254962789}
+  - component: {fileID: 254962792}
   m_Layer: 5
   m_Name: Iria_Talk
   m_TagString: Untagged
@@ -1186,7 +1216,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 254962790}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 254962792}
+        m_TargetAssemblyTypeName: ScheduleEntity, Assembly-CSharp
+        m_MethodName: SelectSchedule
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &254962790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1225,6 +1267,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254962787}
   m_CullTransparentMesh: 1
+--- !u!114 &254962792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254962787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d548fb3c044af7f4da1272d346318a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectPreviewObj: {fileID: 2012141201}
+  stress: 0
+  money: 0
+  favor: 0
 --- !u!1 &269808218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,7 +1314,7 @@ RectTransform:
   - {fileID: 903569746}
   - {fileID: 1335571700}
   m_Father: {fileID: 720352009}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2283,6 +2341,7 @@ GameObject:
   - component: {fileID: 594157523}
   - component: {fileID: 594157522}
   - component: {fileID: 594157521}
+  - component: {fileID: 594157524}
   m_Layer: 5
   m_Name: Rest_Sleep
   m_TagString: Untagged
@@ -2354,7 +2413,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 594157522}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 594157524}
+        m_TargetAssemblyTypeName: ScheduleEntity, Assembly-CSharp
+        m_MethodName: SelectSchedule
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &594157522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2393,6 +2464,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594157519}
   m_CullTransparentMesh: 1
+--- !u!114 &594157524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594157519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d548fb3c044af7f4da1272d346318a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectPreviewObj: {fileID: 1688710750}
+  stress: 0
+  money: 0
+  favor: 0
 --- !u!1 &667666415
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,6 +2764,7 @@ RectTransform:
   m_Children:
   - {fileID: 1923458477}
   - {fileID: 1606426030}
+  - {fileID: 160545144}
   - {fileID: 269808219}
   - {fileID: 1615221297}
   m_Father: {fileID: 2146684078}
@@ -3040,7 +3128,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 832559240}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 684757059}
+        m_TargetAssemblyTypeName: ScheduleManager, Assembly-CSharp
+        m_MethodName: Init
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &832559240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3584,6 +3684,7 @@ GameObject:
   - component: {fileID: 945550473}
   - component: {fileID: 945550472}
   - component: {fileID: 945550471}
+  - component: {fileID: 945550474}
   m_Layer: 5
   m_Name: Part_Week
   m_TagString: Untagged
@@ -3655,7 +3756,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 945550472}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 945550474}
+        m_TargetAssemblyTypeName: ScheduleEntity, Assembly-CSharp
+        m_MethodName: SelectSchedule
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &945550472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3694,6 +3807,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945550469}
   m_CullTransparentMesh: 1
+--- !u!114 &945550474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945550469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d548fb3c044af7f4da1272d346318a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectPreviewObj: {fileID: 1495965684}
+  stress: 0
+  money: 0
+  favor: 0
 --- !u!1 &948712167
 GameObject:
   m_ObjectHideFlags: 0
@@ -5589,6 +5718,7 @@ GameObject:
   - component: {fileID: 1399986816}
   - component: {fileID: 1399986815}
   - component: {fileID: 1399986814}
+  - component: {fileID: 1399986817}
   m_Layer: 5
   m_Name: Rest_PC
   m_TagString: Untagged
@@ -5660,7 +5790,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1399986815}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1399986817}
+        m_TargetAssemblyTypeName: ScheduleEntity, Assembly-CSharp
+        m_MethodName: SelectSchedule
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1399986815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5699,6 +5841,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399986812}
   m_CullTransparentMesh: 1
+--- !u!114 &1399986817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399986812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d548fb3c044af7f4da1272d346318a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectPreviewObj: {fileID: 948712167}
+  stress: 0
+  money: 0
+  favor: 0
 --- !u!1 &1426682708
 GameObject:
   m_ObjectHideFlags: 0
@@ -6818,6 +6976,7 @@ GameObject:
   - component: {fileID: 1583933517}
   - component: {fileID: 1583933516}
   - component: {fileID: 1583933515}
+  - component: {fileID: 1583933518}
   m_Layer: 5
   m_Name: Iria_Cook
   m_TagString: Untagged
@@ -6889,7 +7048,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1583933516}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1583933518}
+        m_TargetAssemblyTypeName: ScheduleEntity, Assembly-CSharp
+        m_MethodName: SelectSchedule
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1583933516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6928,6 +7099,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583933513}
   m_CullTransparentMesh: 1
+--- !u!114 &1583933518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583933513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d548fb3c044af7f4da1272d346318a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectPreviewObj: {fileID: 1041538525}
+  stress: 0
+  money: 0
+  favor: 0
 --- !u!1 &1606426029
 GameObject:
   m_ObjectHideFlags: 0
@@ -6998,7 +7185,7 @@ RectTransform:
   - {fileID: 320828548}
   - {fileID: 849350867}
   m_Father: {fileID: 720352009}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7570,6 +7757,7 @@ GameObject:
   - component: {fileID: 1980661307}
   - component: {fileID: 1980661306}
   - component: {fileID: 1980661305}
+  - component: {fileID: 1980661308}
   m_Layer: 5
   m_Name: Iria_Date
   m_TagString: Untagged
@@ -7641,7 +7829,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1980661306}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1980661308}
+        m_TargetAssemblyTypeName: ScheduleEntity, Assembly-CSharp
+        m_MethodName: SelectSchedule
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1980661306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7680,6 +7880,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980661303}
   m_CullTransparentMesh: 1
+--- !u!114 &1980661308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980661303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d548fb3c044af7f4da1272d346318a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectPreviewObj: {fileID: 667666415}
+  stress: 0
+  money: 0
+  favor: 0
 --- !u!1 &2010311344
 GameObject:
   m_ObjectHideFlags: 0
@@ -7965,6 +8181,7 @@ GameObject:
   - component: {fileID: 2031762594}
   - component: {fileID: 2031762593}
   - component: {fileID: 2031762592}
+  - component: {fileID: 2031762595}
   m_Layer: 5
   m_Name: Part_Strong
   m_TagString: Untagged
@@ -8036,7 +8253,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2031762593}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2031762595}
+        m_TargetAssemblyTypeName: ScheduleEntity, Assembly-CSharp
+        m_MethodName: SelectSchedule
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2031762593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8075,6 +8304,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031762590}
   m_CullTransparentMesh: 1
+--- !u!114 &2031762595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031762590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d548fb3c044af7f4da1272d346318a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectPreviewObj: {fileID: 1256254992}
+  stress: 0
+  money: 0
+  favor: 0
 --- !u!1 &2038624333
 GameObject:
   m_ObjectHideFlags: 0
@@ -8476,7 +8721,6 @@ RectTransform:
   m_Children:
   - {fileID: 720352009}
   - {fileID: 425404426}
-  - {fileID: 160545144}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

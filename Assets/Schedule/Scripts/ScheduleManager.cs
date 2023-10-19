@@ -67,8 +67,24 @@ public class ScheduleManager : MonoBehaviour
 
     // 버튼 - 스케쥴 초기화
     public void Init()
-    { 
-    
+    {
+        if (currMorning)
+        {
+            currMorning.DeselectSchedule();
+            currMorning = null;
+        }
+
+        if (currDay)
+        {
+            currDay.DeselectSchedule();
+            currDay = null;
+        }
+
+        if (currNight)
+        {
+            currNight.DeselectSchedule();
+            currNight = null;
+        }
     }
 
     // 스토리 모드로 돌아가기

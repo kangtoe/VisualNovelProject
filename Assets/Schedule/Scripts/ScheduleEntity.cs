@@ -23,7 +23,7 @@ public class ScheduleEntity : MonoBehaviour
     {
         rt = GetComponent<RectTransform>();
         origonSize = rt.sizeDelta;
-        origonPos = rt.anchoredPosition;        
+        origonPos = rt.position;        
     }
 
     bool isChanging = false;
@@ -46,27 +46,30 @@ public class ScheduleEntity : MonoBehaviour
             return;
         }
 
+        RectTransform targetRt = ScheduleManager.AddSechdule(this);
+        if (targetRt) Debug.Log("targetRt: " + targetRt.name);
+        else return;
+
         GameObject go = Instantiate(selectPreviewObj, transform.root);
         go.SetActive(true);
         spwanedPreviewObjList.Add(go);
-        RectTransform rt = go.GetComponent<RectTransform>();
-
-        RectTransform targetRt = ScheduleManager.AddSechdule(this);
-        if (!targetRt) return;
+        RectTransform startRt = go.GetComponent<RectTransform>();        
+        startRt.position = rt.position;        
         
         Vector2 targetSize = targetRt.sizeDelta;
-        Vector2 targetPos = targetRt.anchoredPosition;
+        Vector2 targetPos = targetRt.position;
+        Debug.Log("targetRt.position :" + targetRt.position);
 
-        StartCoroutine(SmoothChange(rt, targetSize, targetPos));
+        StartCoroutine(SmoothChange(startRt, targetSize, targetPos));
     }    
 
-    IEnumerator SmoothChange(RectTransform rt, Vector2 targetSize, Vector2 TargetPos)
+    IEnumerator SmoothChange(RectTransform _rt, Vector2 targetSize, Vector2 TargetPos)
     {
         float duration = 0.5f;
         float t = 0;
 
-        Vector2 startSize = rt.sizeDelta;
-        Vector2 startPos = rt.anchoredPosition;
+        Vector2 startSize = _rt.sizeDelta;
+        Vector2 startPos = _rt.position;
 
         isChanging = true;
         while (true)
@@ -74,8 +77,8 @@ public class ScheduleEntity : MonoBehaviour
             t += Time.deltaTime / duration;
             if (t > 1) t = 1;
 
-            rt.sizeDelta = Vector2.Lerp(startSize, targetSize, t);
-            rt.anchoredPosition = Vector2.Lerp(startPos, TargetPos, t);
+            _rt.sizeDelta = Vector2.Lerp(startSize, targetSize, t);
+            _rt.position = Vector2.Lerp(startPos, TargetPos, t);
 
             if (t == 1) break;
 
@@ -83,27 +86,5 @@ public class ScheduleEntity : MonoBehaviour
         }
 
         isChanging = false;
-    }
-
-
-    // 전역 앵커드 포지션을 반환하는 함수
-    public Vector2 GetGlobalAnchoredPosition(RectTransform rectTransform)
-    {        
-        Transform originPa = rectTransform.parent;
-        Vector2 originMin = rectTransform.anchorMin;
-        Vector2 originMax = rectTransform.anchorMin;
-
-        rectTransform.SetParent(rectTransform.root);
-        rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
-        rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
-
-        Vector3 globalAnchoredPosition = rectTransform.anchoredPosition;
-        Debug.Log(rectTransform.name + ": globalAnchoredPosition =" + globalAnchoredPosition);
-
-        rectTransform.SetParent(originPa);        
-        rectTransform.anchorMin = originMin;
-        rectTransform.anchorMin = originMax;
-
-        return globalAnchoredPosition;
     }
 }
