@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScheduleEntity : MonoBehaviour
 {    
@@ -14,7 +15,7 @@ public class ScheduleEntity : MonoBehaviour
     public float love;
 
     RectTransform rt;
-    bool isChanging = false;
+    //bool isChanging = false;
 
     ScheduleManager ScheduleManager => ScheduleManager.Instance;
 
@@ -30,6 +31,7 @@ public class ScheduleEntity : MonoBehaviour
         foreach (GameObject go in spwanedPreviewObjList)
         {
             // TODO : 오브젝트 페이드 아웃 후 삭제
+            StopAllCoroutines();
             Destroy(go);
         }
         spwanedPreviewObjList.Clear();        
@@ -38,11 +40,11 @@ public class ScheduleEntity : MonoBehaviour
     // 버튼 이벤트 - UI 클릭시
     public void SelectSchedule()
     {
-        if (isChanging)
-        {
-            Debug.Log("isChanging");
-            return;
-        }
+        //if (isChanging)
+        //{
+        //    Debug.Log("isChanging");
+        //    return;
+        //}
 
         // 스케쥴 UI 타겟 구하기
         RectTransform targetRt = ScheduleManager.AddSechdule(this);
@@ -66,26 +68,36 @@ public class ScheduleEntity : MonoBehaviour
     // UI 연출
     IEnumerator SmoothChange(RectTransform _rt, Vector2 targetSize, Vector2 TargetPos)
     {
-        float duration = 0.5f;
-        float t = 0;
+        //float duration = 0.5f;
+        //float t = 0;
+        //Vector2 startSize = _rt.sizeDelta;
+        //Vector2 startPos = _rt.position;
+        //isChanging = true;
 
-        Vector2 startSize = _rt.sizeDelta;
-        Vector2 startPos = _rt.position;
+        Image img = _rt.GetComponent<Image>();
+        float alpha = 0.4f;
 
-        isChanging = true;
         while (true)
         {
-            t += Time.deltaTime / duration;
-            if (t > 1) t = 1;
+            //t += Time.deltaTime / duration;
+            //if (t > 1) t = 1;
+            //_rt.sizeDelta = Vector2.Lerp(startSize, targetSize, t);
+            //_rt.position = Vector2.Lerp(startPos, TargetPos, t);
 
-            _rt.sizeDelta = Vector2.Lerp(startSize, targetSize, t);
-            _rt.position = Vector2.Lerp(startPos, TargetPos, t);
+            float speed = 10f * Time.deltaTime;
+            _rt.sizeDelta = Vector2.Lerp(_rt.sizeDelta, targetSize, speed);
+            _rt.position = Vector2.Lerp(_rt.position, TargetPos, speed);
 
-            if (t == 1) break;
+            Color col = img.color;
+            alpha = Mathf.Lerp(alpha, 1, speed);            
+            col.a = alpha;
+            img.color = col;
+
+            //if (t == 1) break;
 
             yield return null;
         }
 
-        isChanging = false;
+        //isChanging = false;
     }
 }

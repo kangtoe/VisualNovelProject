@@ -94,13 +94,12 @@ public class AdvCommand_Save : AdvCommand
 			return;
 		}
 
-		Debug.Log("ParamSave");
-		ExtraSave.ChapterProgress = (int)engine.Param.GetParameter("flag");
+		Debug.Log("ParamSave");		
 		ExtraSave.Money = (int)engine.Param.GetParameter("money");
 		ExtraSave.Stress = (int)engine.Param.GetParameter("stress");
 		ExtraSave.love = (int)engine.Param.GetParameter("love");
 		ExtraSave.Blood = (float)engine.Param.GetParameter("blood");
-		ExtraSave.DayProgress = (int)engine.Param.GetParameter("day");
+		ExtraSave.Flag = (int)engine.Param.GetParameter("flag");
 	}
 }
 
@@ -126,13 +125,12 @@ public class AdvCommand_Load : AdvCommand
 			return;
 		}
 
-		Debug.Log("ParamLoad");
-		engine.Param.SetParameter("flag", ExtraSave.ChapterProgress);
+		Debug.Log("ParamLoad");		
 		engine.Param.SetParameter("money", ExtraSave.Money);
 		engine.Param.SetParameter("stress", ExtraSave.Stress);
 		engine.Param.SetParameter("love", ExtraSave.love);
 		engine.Param.SetParameter("blood", ExtraSave.Blood);
-		engine.Param.SetParameter("day", ExtraSave.DayProgress);
+		engine.Param.SetParameter("flag", ExtraSave.Flag);
 	}
 }
 
@@ -152,13 +150,12 @@ public class AdvCommand_ParamClear : AdvCommand
 			return;
 		}
 
-		Debug.Log("ParamClear");
-		ExtraSave.ChapterProgress = 0;
+		Debug.Log("ParamClear");		
 		ExtraSave.Money = 0;
 		ExtraSave.Stress = 0;
 		ExtraSave.love = 0;
 		ExtraSave.Blood = 0;
-		ExtraSave.DayProgress = 0;
+		ExtraSave.Flag = 0;
 	}
 }
 

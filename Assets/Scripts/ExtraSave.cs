@@ -5,34 +5,21 @@ using UnityEngine;
 // 우타게 외부 세이브 데이터 관리
 public static class ExtraSave
 {
-    static string chapterProgressKey = "chapterPorgressKey";
-    static string dayProgressKey = "dayProgressKey";
+    static string flagKey = "flagKey";
     static string moneyKey = "moneyKey";
     static string stressKey = "stressKey";
     static string loveKey = "loveKey";
     static string bloodKey = "bloodKey";
 
-    public static int ChapterProgress
+    public static int Flag
     {
         get
         {
-            return PlayerPrefs.GetInt(chapterProgressKey);
+            return PlayerPrefs.GetInt(flagKey);
         }
         set
         {
-            PlayerPrefs.SetInt(chapterProgressKey, value);
-        }
-    }
-
-    public static int DayProgress
-    {
-        get
-        {
-            return PlayerPrefs.GetInt(dayProgressKey);
-        }
-        set
-        {
-            PlayerPrefs.SetInt(dayProgressKey, value);
+            PlayerPrefs.SetInt(flagKey, value);
         }
     }
 

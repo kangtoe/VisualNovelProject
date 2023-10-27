@@ -21,8 +21,7 @@ public class SaveDataViewer : MonoBehaviour
     private static SaveDataViewer instance;
     #endregion
 
-    public int ChapterProgress;
-    public int DayProgress;
+    public int Flag;    
     public int Money;
     public int Stress;
     public int love;
@@ -40,8 +39,7 @@ public class SaveDataViewer : MonoBehaviour
     // 저장 데이터 가져와 표시
     public void GetSave()
     {
-        ChapterProgress = ExtraSave.ChapterProgress;
-        DayProgress = ExtraSave.DayProgress;
+        Flag = ExtraSave.Flag;        
         Money = ExtraSave.Money;
         Stress = ExtraSave.Stress;
         love = ExtraSave.love;
@@ -50,9 +48,8 @@ public class SaveDataViewer : MonoBehaviour
 
     // 현재 표시된 데이터로 저장 데이터 수정
     public void SetSave()
-    {
-        ExtraSave.ChapterProgress = ChapterProgress;
-        ExtraSave.DayProgress = DayProgress;        
+    {        
+        ExtraSave.Flag = Flag;        
         ExtraSave.Money = Money;
         ExtraSave.Stress = Stress;
         ExtraSave.love = love;

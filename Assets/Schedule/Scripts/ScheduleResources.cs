@@ -21,7 +21,10 @@ public class ScheduleResources : MonoBehaviour
     [SerializeField]
     float currBlood = 0;
     [SerializeField]
-    Text bloodTxt;                
+    Text bloodTxt;
+
+    const float MAX_BLOOD = 0.5f;
+    const string BLOOD_STRING = "L";
 
     [Header("스트레스")]
     public float adjustStress;        
@@ -30,7 +33,9 @@ public class ScheduleResources : MonoBehaviour
     [SerializeField]
     Text stressTxt;
     [SerializeField]
-    Image stressGage;
+    Image currStressGage;
+    [SerializeField]
+    Image previewStressGage;
 
     [Header("호감도")]
     public float adjustLove;
@@ -84,7 +89,7 @@ public class ScheduleResources : MonoBehaviour
         else if (adjustStress == 0) color = colorNomal;
         else color = colorNevative;
         stressTxt.color = color;
-        stressGage.fillAmount = (currStress + adjustStress / 100);
+        previewStressGage.fillAmount = (currStress + adjustStress / 100);
 
         if (adjustLove > 0) color = colorPositive;
         else if (adjustLove == 0) color = colorNomal;
@@ -98,7 +103,7 @@ public class ScheduleResources : MonoBehaviour
 
         bloodTxt.text = (currBlood + adjustBlood).ToString() + "/100";
         stressTxt.text = (currStress + adjustStress).ToString() + "/100";
-        loveTxt.text = (currLove + adjustLove).ToString() + "/100";
+        loveTxt.text = (currLove + adjustLove).ToString("F1") + "/" + MAX_BLOOD + BLOOD_STRING;
         moneyTxt.text = (currMoney + adjustMoney).ToString();
     }
 
