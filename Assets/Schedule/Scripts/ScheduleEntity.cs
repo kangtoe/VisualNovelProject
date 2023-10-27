@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class ScheduleEntity : MonoBehaviour
-{    
+{
+    public GameObject hoverUi;
+
     public GameObject selectPreviewObj;
     List<GameObject> spwanedPreviewObjList = new List<GameObject>();
 
@@ -22,7 +25,24 @@ public class ScheduleEntity : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rt = GetComponent<RectTransform>();     
+        rt = GetComponent<RectTransform>();
+
+        EventTrigger et = gameObject.AddComponent<EventTrigger>();
+        EventTrigger.Entry entry;
+        
+        entry = new EventTrigger.Entry();
+        entry.eventID = EventTriggerType.PointerEnter;
+        entry.callback.AddListener(delegate {
+            ActiveHoverUi();
+        });
+        et.triggers.Add(entry);
+
+        entry = new EventTrigger.Entry();
+        entry.eventID = EventTriggerType.PointerExit;
+        entry.callback.AddListener(delegate {
+            InactiveHoverUi();
+        });
+        et.triggers.Add(entry);
     }
     
     // 기존 생성된 스케쥴 UI 모두 지우기
@@ -99,5 +119,15 @@ public class ScheduleEntity : MonoBehaviour
         }
 
         //isChanging = false;
+    }
+
+    public void ActiveHoverUi()
+    {
+        hoverUi.SetActive(true);
+    }
+
+    public void InactiveHoverUi()
+    {
+        hoverUi.SetActive(false);
     }
 }

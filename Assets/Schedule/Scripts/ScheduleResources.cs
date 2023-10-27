@@ -81,31 +81,41 @@ public class ScheduleResources : MonoBehaviour
         Color colorNomal = Color.white;
 
         // 텍스트 색 설정
+        {
+            // 흡혈
+            if (adjustBlood > 0) color = colorPositive;
+            else if (adjustBlood == 0) color = colorNomal;
+            else color = colorNevative;
+            bloodTxt.color = color;
 
-        if (adjustBlood > 0) color = colorPositive;
-        else if (adjustBlood == 0) color = colorNomal;
-        else color = colorNevative;
-        bloodTxt.color = color;        
+            // 스트레스
+            if (adjustStress < 0) color = colorPositive;
+            else if (adjustStress == 0) color = colorNomal;
+            else color = colorNevative;
+            stressTxt.color = color;
 
-        if (adjustStress < 0) color = colorPositive;
-        else if (adjustStress == 0) color = colorNomal;
-        else color = colorNevative;
-        stressTxt.color = color;
-        previewStressGage.fillAmount = (currStress + adjustStress / 100);
+            // 호감도
+            if (adjustLove > 0) color = colorPositive;
+            else if (adjustLove == 0) color = colorNomal;
+            else color = colorNevative;
+            loveTxt.color = color;
 
-        if (adjustLove > 0) color = colorPositive;
-        else if (adjustLove == 0) color = colorNomal;
-        else color = colorNevative;
-        loveTxt.color = color;
+            // 돈
+            if (adjustMoney > 0) color = colorPositive;
+            else if (adjustMoney == 0) color = colorNomal;
+            else color = colorNevative;
+            moneyTxt.color = color;
 
-        if (adjustMoney > 0) color = colorPositive;
-        else if (adjustMoney == 0) color = colorNomal;
-        else color = colorNevative;
-        moneyTxt.color = color;
+        }
 
-        bloodTxt.text = (currBlood + adjustBlood).ToString() + "/100";
+        // 게이지
+        currStressGage.fillAmount = currStress / 100;
+        previewStressGage.fillAmount = (currStress + adjustStress / 100);      
+
+        // 텍스트 설정
+        bloodTxt.text = (currBlood + adjustBlood).ToString("F1") + "/" + MAX_BLOOD + BLOOD_STRING;
         stressTxt.text = (currStress + adjustStress).ToString() + "/100";
-        loveTxt.text = (currLove + adjustLove).ToString("F1") + "/" + MAX_BLOOD + BLOOD_STRING;
+        loveTxt.text = (currLove + adjustLove).ToString();
         moneyTxt.text = (currMoney + adjustMoney).ToString();
     }
 
@@ -116,6 +126,7 @@ public class ScheduleResources : MonoBehaviour
         adjustStress = 0;
         adjustLove = 0;
         adjustMoney = 0;
+        currDay = 0;
 
         PreviewUI();      
     }
@@ -127,8 +138,9 @@ public class ScheduleResources : MonoBehaviour
         currStress += adjustStress;
         currLove += adjustLove;
         currMoney += adjustMoney;
+        
         currDay++;
-        //currDay += adjustDay;
+        dayTxt.text = currDay.ToString();
 
         PreviewUI();
 
