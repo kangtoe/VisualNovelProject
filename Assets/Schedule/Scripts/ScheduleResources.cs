@@ -96,9 +96,9 @@ public class ScheduleResources : MonoBehaviour
         else color = colorNevative;
         moneyTxt.color = color;
 
-        bloodTxt.text = (currBlood + adjustBlood).ToString();
-        stressTxt.text = (currStress + adjustStress).ToString();
-        loveTxt.text = (currLove + adjustLove).ToString();
+        bloodTxt.text = (currBlood + adjustBlood).ToString() + "/100";
+        stressTxt.text = (currStress + adjustStress).ToString() + "/100";
+        loveTxt.text = (currLove + adjustLove).ToString() + "/100";
         moneyTxt.text = (currMoney + adjustMoney).ToString();
     }
 
