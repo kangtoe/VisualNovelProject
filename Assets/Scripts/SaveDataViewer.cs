@@ -26,6 +26,7 @@ public class SaveDataViewer : MonoBehaviour
     public int Stress;
     public int love;
     public float Blood;
+    public int Day;
 
     private void Awake()
     {
@@ -43,7 +44,8 @@ public class SaveDataViewer : MonoBehaviour
         Money = ExtraSave.Money;
         Stress = ExtraSave.Stress;
         love = ExtraSave.love;
-        Blood = ExtraSave.Blood;        
+        Blood = ExtraSave.Blood;
+        Day = ExtraSave.DayProgress;
     }
 
     // 현재 표시된 데이터로 저장 데이터 수정
@@ -54,6 +56,7 @@ public class SaveDataViewer : MonoBehaviour
         ExtraSave.Stress = Stress;
         ExtraSave.love = love;
         ExtraSave.Blood = Blood;
+        ExtraSave.DayProgress = Day;
     }
 
     // 세이브 데이터 삭제 (초기화)

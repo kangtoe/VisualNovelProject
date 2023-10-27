@@ -100,6 +100,7 @@ public class AdvCommand_Save : AdvCommand
 		ExtraSave.love = (int)engine.Param.GetParameter("love");
 		ExtraSave.Blood = (float)engine.Param.GetParameter("blood");
 		ExtraSave.Flag = (int)engine.Param.GetParameter("flag");
+		ExtraSave.DayProgress = (int)engine.Param.GetParameter("day");
 	}
 }
 
@@ -131,6 +132,7 @@ public class AdvCommand_Load : AdvCommand
 		engine.Param.SetParameter("love", ExtraSave.love);
 		engine.Param.SetParameter("blood", ExtraSave.Blood);
 		engine.Param.SetParameter("flag", ExtraSave.Flag);
+		engine.Param.SetParameter("day", ExtraSave.DayProgress);
 	}
 }
 

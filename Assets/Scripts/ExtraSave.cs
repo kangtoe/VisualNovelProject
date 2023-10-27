@@ -6,6 +6,7 @@ using UnityEngine;
 public static class ExtraSave
 {
     static string flagKey = "flagKey";
+    static string DayProgressKey = "dayProgressKey";
     static string moneyKey = "moneyKey";
     static string stressKey = "stressKey";
     static string loveKey = "loveKey";
@@ -20,6 +21,18 @@ public static class ExtraSave
         set
         {
             PlayerPrefs.SetInt(flagKey, value);
+        }
+    }
+
+    public static int DayProgress
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(DayProgressKey);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(DayProgressKey, value);
         }
     }
 

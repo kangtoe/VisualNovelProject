@@ -55,8 +55,10 @@ public class ScheduleResources : MonoBehaviour
     [SerializeField]
     float currDay = 0;
     [SerializeField]
-    Text dayTxt;                              
+    Text dayTxt;
     //float adjustDay;
+
+    const float MAX_DAY = 30;
 
     // Start is called before the first frame update
     void Start()
@@ -129,5 +131,7 @@ public class ScheduleResources : MonoBehaviour
         //currDay += adjustDay;
 
         PreviewUI();
+
+        // ¸¸¾à 
     }
 }
