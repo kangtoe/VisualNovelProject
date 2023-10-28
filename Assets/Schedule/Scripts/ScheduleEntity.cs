@@ -74,7 +74,7 @@ public class ScheduleEntity : MonoBehaviour
         // 가능한 스케쥴인지 체크
         {
             if (ScheduleResources.Instance.CurrMoney + money < 0) return;
-            if (ScheduleResources.Instance.CurrStress + stress > ScheduleResources.MAX_STRESS) return;
+            if (ScheduleResources.Instance.PreviewStress + stress > ScheduleResources.MAX_STRESS) return;
         }
 
         // 스케쥴 UI 타겟 구하기
@@ -95,6 +95,8 @@ public class ScheduleEntity : MonoBehaviour
         Vector2 targetPos = targetRt.position;
         Debug.Log("targetRt.position :" + targetRt.position);
         StartCoroutine(SmoothChange(startRt, targetSize, targetPos));
+
+        InitHoverUi();
     }    
 
     // UI 연출

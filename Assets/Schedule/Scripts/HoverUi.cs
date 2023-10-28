@@ -43,10 +43,10 @@ public class HoverUi : MonoBehaviour
             //Debug.Log(str);
         }       
 
-        int CurrentMoney = ScheduleResources.Instance.CurrMoney;
-        float CurrentStress = ScheduleResources.Instance.CurrStress;
-        float CurrentLove = ScheduleResources.Instance.CurrLove;
-        float CurrentBlood = ScheduleResources.Instance.CurrBlood;
+        float CurrentMoney = ScheduleResources.Instance.PreviewMoney;
+        float CurrentStress = ScheduleResources.Instance.PreviewStress;
+        float CurrentLove = ScheduleResources.Instance.PreviewLove;
+        float CurrentBlood = ScheduleResources.Instance.PreviewBlood;
 
         // 증감 문구 토글 (변화가 없는 경우 끄기)
         {
@@ -67,7 +67,7 @@ public class HoverUi : MonoBehaviour
                     moneyN.SetActive(true);
                     moneyN.GetComponent<Text>().text = changeAmount + moneyNstr;
                 }                                
-                moneyChange.Init(changePositive, CurrentMoney, momeyChangeAmount); // 변화량 문구 초기화
+                moneyChange.Init(changePositive, CurrentMoney, CurrentMoney + momeyChangeAmount); // 변화량 문구 초기화
             }
             else
             {
@@ -93,7 +93,7 @@ public class HoverUi : MonoBehaviour
                     stressN.SetActive(true);
                     stressN.GetComponent<Text>().text = changeAmount + stressNstr;
                 }
-                stressChange.Init(changePositive, CurrentStress, stressChangeAmount);
+                stressChange.Init(changePositive, CurrentStress, CurrentStress + stressChangeAmount);
             }
             else
             {
@@ -119,7 +119,7 @@ public class HoverUi : MonoBehaviour
                     loveN.SetActive(true);
                     loveN.GetComponent<Text>().text = changeAmount + loveNstr;
                 }
-                loveChange.Init(changePositive, CurrentLove, loveChangeAmount);
+                loveChange.Init(changePositive, CurrentLove, CurrentLove + loveChangeAmount);
             }
             else
             {
@@ -145,7 +145,7 @@ public class HoverUi : MonoBehaviour
                     bloodN.SetActive(true);
                     bloodN.GetComponent<Text>().text = changeAmount + bloodNstr;
                 }
-                bloodChange.Init(changePositive, CurrentBlood, bloodChangeAmount);
+                bloodChange.Init(changePositive, CurrentBlood, CurrentBlood + bloodChangeAmount);
             }
             else
             {

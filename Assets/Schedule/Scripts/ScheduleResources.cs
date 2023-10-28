@@ -26,6 +26,7 @@ public class ScheduleResources : MonoBehaviour
     [SerializeField]
     float currBlood = 0;
     public float CurrBlood => currBlood;
+    public float PreviewBlood => CurrBlood + adjustBlood;
     [SerializeField]
     Text bloodTxt;    
 
@@ -34,6 +35,7 @@ public class ScheduleResources : MonoBehaviour
     [SerializeField]
     float currStress = 0;
     public float CurrStress => currStress;
+    public float PreviewStress => currStress + adjustStress;
     [SerializeField]
     Text stressTxt;
     [SerializeField]
@@ -46,6 +48,7 @@ public class ScheduleResources : MonoBehaviour
     [SerializeField]
     float currLove = 0;
     public float CurrLove => currLove;
+    public float PreviewLove => CurrLove + adjustLove;
     [SerializeField]
     Text loveTxt;
 
@@ -56,6 +59,7 @@ public class ScheduleResources : MonoBehaviour
     [SerializeField]
     int currMoney = 0;
     public int CurrMoney => currMoney;
+    public float PreviewMoney => CurrMoney + addMoney + subMoney;
     [SerializeField]
     Text moneyTxt;
 
