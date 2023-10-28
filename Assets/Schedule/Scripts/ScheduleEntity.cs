@@ -71,6 +71,12 @@ public class ScheduleEntity : MonoBehaviour
         //    return;
         //}
 
+        // 가능한 스케쥴인지 체크
+        {
+            if (ScheduleResources.Instance.CurrMoney + money < 0) return;
+            if (ScheduleResources.Instance.CurrStress + stress > ScheduleResources.MAX_STRESS) return;
+        }
+
         // 스케쥴 UI 타겟 구하기
         RectTransform targetRt = ScheduleManager.AddSechdule(this);
         if (targetRt) Debug.Log("targetRt: " + targetRt.name);
