@@ -16,16 +16,18 @@ public class ScheduleResources : MonoBehaviour
     }
     private static ScheduleResources instance;
 
+    public static readonly float MAX_STRESS = 100;
+    public static readonly float MAX_LOVE = 100;
+    public static readonly float MAX_BLOOD = 5.0f;
+    public static readonly string BLOOD_STRING = "L";
+
     [Header("흡혈")]
     public float adjustBlood;
     [SerializeField]
     float currBlood = 0;
     public float CurrBlood => currBlood;
     [SerializeField]
-    Text bloodTxt;
-
-    const float MAX_BLOOD = 0.5f;
-    const string BLOOD_STRING = "L";
+    Text bloodTxt;    
 
     [Header("스트레스")]
     public float adjustStress;        
@@ -62,6 +64,9 @@ public class ScheduleResources : MonoBehaviour
     [SerializeField]
     Text dayTxt;
     //float adjustDay;
+
+    [Space]
+    [SerializeField] GameObject confirmUI;
 
     const float MAX_DAY = 30;
 
@@ -114,14 +119,15 @@ public class ScheduleResources : MonoBehaviour
         }
 
         // 게이지
-        currStressGage.fillAmount = currStress / 100;
-        previewStressGage.fillAmount = (currStress + adjustStress / 100);      
+        currStressGage.fillAmount = currStress / MAX_STRESS;
+        previewStressGage.fillAmount = (currStress + adjustStress) / MAX_STRESS;      
 
         // 텍스트 설정
         bloodTxt.text = (currBlood + adjustBlood).ToString("F1") + "/" + MAX_BLOOD + BLOOD_STRING;
-        stressTxt.text = (currStress + adjustStress).ToString() + "/100";
-        loveTxt.text = (currLove + adjustLove).ToString();
+        stressTxt.text = (currStress + adjustStress).ToString() + "/" + MAX_STRESS;
+        loveTxt.text = (currLove + adjustLove).ToString() + "/" + MAX_LOVE;
         moneyTxt.text = (currMoney + adjustMoney).ToString();
+        dayTxt.text = currDay.ToString();
     }
 
     // 수정값 & 적용 UI 초기화 
@@ -136,19 +142,31 @@ public class ScheduleResources : MonoBehaviour
         PreviewUI();      
     }
 
-    // 수정값 적용
+    // 실행 버튼 클릭 시
     public void Confirm()
+    {
+        confirmUI.SetActive(true);
+    }
+
+    // 수정값 적용
+    public void Admit()
     {
         currBlood += adjustBlood;
         currStress += adjustStress;
         currLove += adjustLove;
         currMoney += adjustMoney;
-        
+
+        adjustBlood = 0;
+        adjustStress = 0;
+        adjustLove = 0;
+        adjustMoney = 0;
+
         currDay++;
         dayTxt.text = currDay.ToString();
 
         PreviewUI();
 
-        // 만약 
-    }
+        ScheduleManager.Instance.Init();
+        confirmUI.SetActive(false);
+    }    
 }

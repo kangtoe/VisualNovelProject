@@ -77,7 +77,8 @@ public class ScheduleEntity : MonoBehaviour
         else return;
 
         // 货肺款 胶纳领 UI 积己
-        GameObject go = Instantiate(selectPreviewObj, transform.root);
+        Transform tf = transform.root.GetChild(transform.root.childCount-2);
+        GameObject go = Instantiate(selectPreviewObj, tf);
         go.SetActive(true);
         spwanedPreviewObjList.Add(go);
         RectTransform startRt = go.GetComponent<RectTransform>();        

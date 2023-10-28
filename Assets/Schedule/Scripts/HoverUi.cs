@@ -34,13 +34,13 @@ public class HoverUi : MonoBehaviour
     {
         // µð¹ö±ë
         {
-            string str = "";
-            str += name + " init";
-            str += " || momeyChangeAmount : " + momeyChangeAmount;
-            str += " || stressChangeAmount : " + stressChangeAmount;
-            str += " || loveChangeAmount : " + loveChangeAmount;
-            str += " || bloodChangeAmount : " + bloodChangeAmount;
-            Debug.Log(str);
+            //string str = "";
+            //str += name + " init";
+            //str += " || momeyChangeAmount : " + momeyChangeAmount;
+            //str += " || stressChangeAmount : " + stressChangeAmount;
+            //str += " || loveChangeAmount : " + loveChangeAmount;
+            //str += " || bloodChangeAmount : " + bloodChangeAmount;
+            //Debug.Log(str);
         }       
 
         int CurrentMoney = ScheduleResources.Instance.CurrMoney;

@@ -438,7 +438,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 66427712}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2141338854}
+        m_TargetAssemblyTypeName: ScheduleResources, Assembly-CSharp
+        m_MethodName: Confirm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &66427712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2362,7 +2374,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 323926387}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2141338854}
+        m_TargetAssemblyTypeName: ScheduleResources, Assembly-CSharp
+        m_MethodName: Admit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &323926387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2650,6 +2674,7 @@ GameObject:
   - component: {fileID: 425404426}
   - component: {fileID: 425404428}
   - component: {fileID: 425404427}
+  - component: {fileID: 425404429}
   m_Layer: 5
   m_Name: Result
   m_TagString: Untagged
@@ -2717,6 +2742,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425404425}
   m_CullTransparentMesh: 1
+--- !u!114 &425404429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425404425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da92dcf0ae7a694498779fb0f2397db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  day: {fileID: 368534199}
+  bloodBefore: {fileID: 1569316756}
+  bloodAfter: {fileID: 796629382}
+  LoveBefore: {fileID: 2076021103}
+  LoveAfter: {fileID: 881680819}
+  StressBefore: {fileID: 513643452}
+  StressAfter: {fileID: 587128221}
+  MoneyBefore: {fileID: 1186019798}
+  MoneyAfter: {fileID: 472306581}
+  income: {fileID: 1301620688}
+  consum: {fileID: 246058233}
+  profit: {fileID: 1849525669}
+  loveNeed: {fileID: 1119712363}
+  bloodNeed: {fileID: 85181410}
+  loveGage: {fileID: 1301555175}
+  bloodGage: {fileID: 1968135480}
 --- !u!1 &472306579
 GameObject:
   m_ObjectHideFlags: 0
@@ -12641,6 +12694,7 @@ MonoBehaviour:
   moneyTxt: {fileID: 1268920799}
   currDay: 0
   dayTxt: {fileID: 173467069}
+  confirmUI: {fileID: 425404425}
 --- !u!4 &2141338855
 Transform:
   m_ObjectHideFlags: 0
