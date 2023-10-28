@@ -66,7 +66,8 @@ public class HoverUi : MonoBehaviour
                     moneyP.SetActive(false);
                     moneyN.SetActive(true);
                     moneyN.GetComponent<Text>().text = changeAmount + moneyNstr;
-                }                                
+                }
+                moneyChange.gameObject.SetActive(true);
                 moneyChange.Init(changePositive, CurrentMoney, CurrentMoney + momeyChangeAmount); // 변화량 문구 초기화
             }
             else
@@ -93,6 +94,7 @@ public class HoverUi : MonoBehaviour
                     stressN.SetActive(true);
                     stressN.GetComponent<Text>().text = changeAmount + stressNstr;
                 }
+                stressChange.gameObject.SetActive(true);
                 stressChange.Init(changePositive, CurrentStress, CurrentStress + stressChangeAmount);
             }
             else
@@ -119,6 +121,7 @@ public class HoverUi : MonoBehaviour
                     loveN.SetActive(true);
                     loveN.GetComponent<Text>().text = changeAmount + loveNstr;
                 }
+                loveChange.gameObject.SetActive(true);
                 loveChange.Init(changePositive, CurrentLove, CurrentLove + loveChangeAmount);
             }
             else
@@ -145,6 +148,7 @@ public class HoverUi : MonoBehaviour
                     bloodN.SetActive(true);
                     bloodN.GetComponent<Text>().text = changeAmount + bloodNstr;
                 }
+                bloodChange.gameObject.SetActive(true);
                 bloodChange.Init(changePositive, CurrentBlood, CurrentBlood + bloodChangeAmount);
             }
             else

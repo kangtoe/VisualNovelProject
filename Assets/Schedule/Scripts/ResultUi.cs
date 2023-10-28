@@ -116,7 +116,6 @@ public class ResultUi : MonoBehaviour
             profit.text = adjustMoney.ToString();
         }
 
-
         // 게이지 설정
         {
             loveNeed.text = resultLove + "/" + ScheduleResources.MAX_LOVE;
