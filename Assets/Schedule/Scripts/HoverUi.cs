@@ -43,10 +43,10 @@ public class HoverUi : MonoBehaviour
             //Debug.Log(str);
         }       
 
-        float CurrentMoney = ScheduleResources.Instance.PreviewMoney;
-        float CurrentStress = ScheduleResources.Instance.PreviewStress;
-        float CurrentLove = ScheduleResources.Instance.PreviewLove;
-        float CurrentBlood = ScheduleResources.Instance.PreviewBlood;
+        float CurrentMoney = ScheduleResources.Instance.PreviewMoneyClm;
+        float CurrentStress = ScheduleResources.Instance.PreviewStressClm;
+        float CurrentLove = ScheduleResources.Instance.PreviewLoveClm;
+        float CurrentBlood = ScheduleResources.Instance.PreviewBloodClm;
 
         // 증감 문구 토글 (변화가 없는 경우 끄기)
         {

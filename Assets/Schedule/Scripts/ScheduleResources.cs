@@ -27,7 +27,7 @@ public class ScheduleResources : MonoBehaviour
     float currBlood = 0;
     public float CurrBlood => currBlood;
     public float PreviewBlood => CurrBlood + adjustBlood;
-    float PreviewBloodClm => Mathf.Clamp(PreviewBlood, 0, float.MaxValue);
+    public float PreviewBloodClm => Mathf.Clamp(PreviewBlood, 0, float.MaxValue);
     [SerializeField]
     Text bloodTxt;    
 
@@ -37,7 +37,7 @@ public class ScheduleResources : MonoBehaviour
     float currStress = 0;
     public float CurrStress => currStress;
     public float PreviewStress => currStress + adjustStress;
-    float PreviewStressClm => Mathf.Clamp(PreviewStress, 0, float.MaxValue);
+    public float PreviewStressClm => Mathf.Clamp(PreviewStress, 0, float.MaxValue);
     [SerializeField]
     Text stressTxt;
     [SerializeField]
@@ -51,7 +51,7 @@ public class ScheduleResources : MonoBehaviour
     float currLove = 0;
     public float CurrLove => currLove;
     public float PreviewLove => CurrLove + adjustLove;
-    float PreviewLoveClm => Mathf.Clamp(PreviewLove, 0, float.MaxValue);
+    public float PreviewLoveClm => Mathf.Clamp(PreviewLove, 0, float.MaxValue);
     [SerializeField]
     Text loveTxt;
 
@@ -63,7 +63,7 @@ public class ScheduleResources : MonoBehaviour
     int currMoney = 0;
     public int CurrMoney => currMoney;
     public int PreviewMoney => CurrMoney + addMoney + subMoney;
-    int PreviewMoneyClm => Mathf.Clamp(PreviewMoney, 0, int.MaxValue);
+    public int PreviewMoneyClm => Mathf.Clamp(PreviewMoney, 0, int.MaxValue);
     [SerializeField]
     Text moneyTxt;
 
