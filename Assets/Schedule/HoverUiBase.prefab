@@ -234,6 +234,7 @@ GameObject:
   - component: {fileID: 7492213278611555000}
   - component: {fileID: 3398208902161274139}
   - component: {fileID: 6860389742810007491}
+  - component: {fileID: 1948240030814408868}
   m_Layer: 5
   m_Name: Blood
   m_TagString: Untagged
@@ -306,6 +307,20 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uD761\uD608\uB7C9"
+--- !u!114 &1948240030814408868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3774806388031918681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7727147097b011a4a87a1ed3516af28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beforeTxt: {fileID: 8703121793808421036}
+  afterTxt: {fileID: 1440993289537078219}
 --- !u!1 &4169352872564532928
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +568,7 @@ GameObject:
   - component: {fileID: 7077249610642426773}
   - component: {fileID: 1511863496659662623}
   - component: {fileID: 5954189924770865234}
+  - component: {fileID: 5589056355639322486}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -625,6 +641,20 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uB3C8"
+--- !u!114 &5589056355639322486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5561838949135962550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7727147097b011a4a87a1ed3516af28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beforeTxt: {fileID: 2174846062851629716}
+  afterTxt: {fileID: 6967843939448896141}
 --- !u!1 &5618085235519206383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,6 +1138,7 @@ GameObject:
   - component: {fileID: 1924971114614171644}
   - component: {fileID: 3305457641422388226}
   - component: {fileID: 1546514506856193877}
+  - component: {fileID: 4691613053482069119}
   m_Layer: 5
   m_Name: Love
   m_TagString: Untagged
@@ -1180,6 +1211,20 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uD638\uAC10\uB3C4"
+--- !u!114 &4691613053482069119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6925858016989079137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7727147097b011a4a87a1ed3516af28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beforeTxt: {fileID: 7000127852528527959}
+  afterTxt: {fileID: 2623093813938522553}
 --- !u!1 &7010535716326699112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,6 +1316,7 @@ GameObject:
   - component: {fileID: 6839576166572393013}
   - component: {fileID: 1011123697980042981}
   - component: {fileID: 7785523814720756790}
+  - component: {fileID: 8419099986965708967}
   m_Layer: 5
   m_Name: Stress
   m_TagString: Untagged
@@ -1343,6 +1389,20 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uC2A4\uD2B8\uB808\uC2A4"
+--- !u!114 &8419099986965708967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8104793340632454205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7727147097b011a4a87a1ed3516af28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beforeTxt: {fileID: 1269217840671156465}
+  afterTxt: {fileID: 7588565503703887253}
 --- !u!1 &8862799778658272818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,18 +1803,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cdde4a5061816448b1292781c09a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyP: {fileID: 0}
-  stressP: {fileID: 0}
-  loveP: {fileID: 0}
-  bloodP: {fileID: 0}
-  moneyN: {fileID: 0}
-  stressN: {fileID: 0}
-  loveN: {fileID: 0}
-  bloodN: {fileID: 0}
-  moneyChange: {fileID: 0}
-  stressChange: {fileID: 0}
-  loveChange: {fileID: 0}
-  bloodChange: {fileID: 0}
+  moneyP: {fileID: 8862799779419159433}
+  stressP: {fileID: 8862799778658272818}
+  loveP: {fileID: 8862799778732296507}
+  bloodP: {fileID: 8862799780221503004}
+  moneyN: {fileID: 8862799780086340550}
+  stressN: {fileID: 8862799779107973670}
+  loveN: {fileID: 8862799779931547798}
+  bloodN: {fileID: 8862799779326943260}
+  moneyChange: {fileID: 5589056355639322486}
+  stressChange: {fileID: 8419099986965708967}
+  loveChange: {fileID: 4691613053482069119}
+  bloodChange: {fileID: 1948240030814408868}
 --- !u!1 &8862799779326943260
 GameObject:
   m_ObjectHideFlags: 0

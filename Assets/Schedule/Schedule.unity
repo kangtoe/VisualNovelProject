@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2656,7 +2656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &425404426
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2848,7 +2848,6 @@ GameObject:
   - component: {fileID: 512042415}
   - component: {fileID: 512042414}
   - component: {fileID: 512042413}
-  - component: {fileID: 512042412}
   m_Layer: 5
   m_Name: Blood_Small_Click
   m_TagString: Untagged
@@ -2877,24 +2876,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 295, y: 106}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &512042412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512042410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d548fb3c044af7f4da1272d346318a2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverUi: {fileID: 0}
-  selectPreviewObj: {fileID: 0}
-  blood: 0
-  stress: 0
-  money: 0
-  love: 0
 --- !u!114 &512042413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2938,19 +2919,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 512042414}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 512042412}
-        m_TargetAssemblyTypeName: ScheduleEntity, Assembly-CSharp
-        m_MethodName: SelectSchedule
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &512042414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8096,7 +8065,6 @@ GameObject:
   - component: {fileID: 1199119725}
   - component: {fileID: 1199119724}
   - component: {fileID: 1199119723}
-  - component: {fileID: 1199119722}
   m_Layer: 5
   m_Name: Blood_Big_Click
   m_TagString: Untagged
@@ -8125,24 +8093,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 295, y: 106}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1199119722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199119720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d548fb3c044af7f4da1272d346318a2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverUi: {fileID: 0}
-  selectPreviewObj: {fileID: 0}
-  blood: 0
-  stress: 0
-  money: 0
-  love: 0
 --- !u!114 &1199119723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8186,19 +8136,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1199119724}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1199119722}
-        m_TargetAssemblyTypeName: ScheduleEntity, Assembly-CSharp
-        m_MethodName: SelectSchedule
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1199119724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11988,7 +11926,7 @@ MonoBehaviour:
   hoverUi: {fileID: 779894143}
   selectPreviewObj: {fileID: 512042410}
   blood: 0.5
-  stress: 10
+  stress: 0
   money: 0
   love: 0
 --- !u!1 &2012141201

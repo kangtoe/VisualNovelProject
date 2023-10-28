@@ -13,9 +13,9 @@ public class ScheduleEntity : MonoBehaviour
 
     [Space]
     public float blood;
-    public float stress;
-    public float money;
-    public float love;
+    public int stress;
+    public int money;
+    public int love;
 
     RectTransform rt;
     //bool isChanging = false;
@@ -27,22 +27,27 @@ public class ScheduleEntity : MonoBehaviour
     {
         rt = GetComponent<RectTransform>();
 
-        EventTrigger et = gameObject.AddComponent<EventTrigger>();
-        EventTrigger.Entry entry;
-        
-        entry = new EventTrigger.Entry();
-        entry.eventID = EventTriggerType.PointerEnter;
-        entry.callback.AddListener(delegate {
-            ActiveHoverUi();
-        });
-        et.triggers.Add(entry);
+        // 호버 이벤트 등록
+        {
+            EventTrigger et = gameObject.AddComponent<EventTrigger>();
+            EventTrigger.Entry entry;
 
-        entry = new EventTrigger.Entry();
-        entry.eventID = EventTriggerType.PointerExit;
-        entry.callback.AddListener(delegate {
-            InactiveHoverUi();
-        });
-        et.triggers.Add(entry);
+            entry = new EventTrigger.Entry();
+            entry.eventID = EventTriggerType.PointerEnter;
+            entry.callback.AddListener(delegate {
+                ActiveHoverUi();
+            });
+            et.triggers.Add(entry);
+
+            entry = new EventTrigger.Entry();
+            entry.eventID = EventTriggerType.PointerExit;
+            entry.callback.AddListener(delegate {
+                InactiveHoverUi();
+            });
+            et.triggers.Add(entry);
+        }
+
+        InitHoverUi();
     }
     
     // 기존 생성된 스케쥴 UI 모두 지우기
@@ -121,9 +126,16 @@ public class ScheduleEntity : MonoBehaviour
         //isChanging = false;
     }
 
+    public void InitHoverUi()
+    {
+        HoverUi ui = hoverUi.GetComponent<HoverUi>();
+        ui.Init(money, stress, love, blood);
+    }
+
     public void ActiveHoverUi()
     {
         hoverUi.SetActive(true);
+        InitHoverUi();
     }
 
     public void InactiveHoverUi()

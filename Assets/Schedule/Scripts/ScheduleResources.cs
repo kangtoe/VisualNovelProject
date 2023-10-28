@@ -20,6 +20,7 @@ public class ScheduleResources : MonoBehaviour
     public float adjustBlood;
     [SerializeField]
     float currBlood = 0;
+    public float CurrBlood => currBlood;
     [SerializeField]
     Text bloodTxt;
 
@@ -30,6 +31,7 @@ public class ScheduleResources : MonoBehaviour
     public float adjustStress;        
     [SerializeField]
     float currStress = 0;
+    public float CurrStress => currStress;
     [SerializeField]
     Text stressTxt;
     [SerializeField]
@@ -41,19 +43,22 @@ public class ScheduleResources : MonoBehaviour
     public float adjustLove;
     [SerializeField]
     float currLove = 0;
+    public float CurrLove => currLove;
     [SerializeField]
     Text loveTxt;
 
     [Header("µ·")]
-    public float adjustMoney;
+    public int adjustMoney;
     [SerializeField]
-    float currMoney = 0;
+    int currMoney = 0;
+    public int CurrMoney => currMoney;
     [SerializeField]
     Text moneyTxt;
 
     [Header("ÀÏÀÚ")]
     [SerializeField]
     float currDay = 0;
+    public float CurrDay => currDay;
     [SerializeField]
     Text dayTxt;
     //float adjustDay;
