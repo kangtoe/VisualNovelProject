@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -978,8 +978,8 @@ MonoBehaviour:
   hoverUi: {fileID: 58148367}
   selectPreviewObj: {fileID: 1508898249}
   blood: 0
-  stress: 0
-  money: 0
+  stress: -50
+  money: 20000
   love: 0
 --- !u!1 &106844028 stripped
 GameObject:
@@ -1892,7 +1892,7 @@ MonoBehaviour:
   blood: 0
   stress: 0
   money: 0
-  love: 0
+  love: 1
 --- !u!1 &269808218
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,8 +2660,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 377, y: -410}
-  m_SizeDelta: {x: 155, y: 135}
+  m_AnchoredPosition: {x: 377, y: -412}
+  m_SizeDelta: {x: 175, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &425404425
 GameObject:
@@ -3474,7 +3474,7 @@ MonoBehaviour:
   hoverUi: {fileID: 318581568}
   selectPreviewObj: {fileID: 1688710750}
   blood: 0
-  stress: 0
+  stress: -10
   money: 0
   love: 0
 --- !u!1001 &626793327
@@ -6447,8 +6447,8 @@ MonoBehaviour:
   hoverUi: {fileID: 1449039287}
   selectPreviewObj: {fileID: 1495965684}
   blood: 0
-  stress: 0
-  money: 0
+  stress: 20
+  money: 10000
   love: 0
 --- !u!1 &948712167
 GameObject:
@@ -6610,8 +6610,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: -410}
-  m_SizeDelta: {x: 155, y: 135}
+  m_AnchoredPosition: {x: 7, y: -412}
+  m_SizeDelta: {x: 175, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1011012776
 PrefabInstance:
@@ -9270,8 +9270,8 @@ MonoBehaviour:
   hoverUi: {fileID: 106844028}
   selectPreviewObj: {fileID: 948712167}
   blood: 0
-  stress: 0
-  money: 0
+  stress: -20
+  money: 5000
   love: 0
 --- !u!1 &1426682708
 GameObject:
@@ -10057,8 +10057,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverUi: {fileID: 1634115112}
   selectPreviewObj: {fileID: 1199119720}
-  blood: 0
-  stress: 0
+  blood: 0.3
+  stress: 40
   money: 0
   love: 0
 --- !u!1 &1508898249
@@ -10656,8 +10656,8 @@ MonoBehaviour:
   selectPreviewObj: {fileID: 1041538525}
   blood: 0
   stress: 0
-  money: 0
-  love: 0
+  money: -5000
+  love: 3
 --- !u!1 &1606426029
 GameObject:
   m_ObjectHideFlags: 0
@@ -11595,8 +11595,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 193, y: -410}
-  m_SizeDelta: {x: 155, y: 135}
+  m_AnchoredPosition: {x: 193, y: -412}
+  m_SizeDelta: {x: 175, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1968135478
 GameObject:
@@ -11826,8 +11826,8 @@ MonoBehaviour:
   selectPreviewObj: {fileID: 667666415}
   blood: 0
   stress: 0
-  money: 0
-  love: 0
+  money: -20000
+  love: 7
 --- !u!1 &2010311344
 GameObject:
   m_ObjectHideFlags: 0
@@ -11978,7 +11978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverUi: {fileID: 779894143}
   selectPreviewObj: {fileID: 512042410}
-  blood: 0.5
+  blood: 0.1
   stress: 10
   money: 0
   love: 0
@@ -12255,8 +12255,8 @@ MonoBehaviour:
   hoverUi: {fileID: 2143603994}
   selectPreviewObj: {fileID: 1256254992}
   blood: 0
-  stress: 0
-  money: 0
+  stress: 50
+  money: 30000
   love: 0
 --- !u!1 &2038624333
 GameObject:
@@ -12689,7 +12689,8 @@ MonoBehaviour:
   adjustLove: 0
   currLove: 0
   loveTxt: {fileID: 863798247}
-  adjustMoney: 0
+  addMoney: 0
+  subMoney: 0
   currMoney: 0
   moneyTxt: {fileID: 1268920799}
   currDay: 0
