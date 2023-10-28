@@ -59,6 +59,11 @@ public class ResultUi : MonoBehaviour
         float resultLove = currLove + adjustLove;
         int resultMoney = currMoney + adjustMoney;
 
+        float resultBloodClm = Mathf.Clamp(resultBlood, 0, int.MaxValue);
+        float resultStressClm = Mathf.Clamp(resultStress, 0, int.MaxValue);
+        float resultLoveClm = Mathf.Clamp(resultLove, 0, int.MaxValue);
+        int resultMoneyClm = Mathf.Clamp(resultMoney, 0, int.MaxValue);
+
         // 텍스트 색 설정
         {
             Color color;
@@ -97,23 +102,23 @@ public class ResultUi : MonoBehaviour
             day.text = ScheduleResources.Instance.CurrDay + "/30";
 
             bloodBefore.text = currBlood.ToString("F1") + "L";
-            bloodAfter.text = resultBlood.ToString("F1") + "L";
+            bloodAfter.text = resultBloodClm.ToString("F1") + "L";
 
             StressBefore.text = currStress.ToString();
-            StressAfter.text = resultStress.ToString();
+            StressAfter.text = resultStressClm.ToString();
 
             LoveBefore.text = currLove.ToString();
-            LoveAfter.text = resultLove.ToString();
+            LoveAfter.text = resultLoveClm.ToString();
 
             MoneyBefore.text = currMoney.ToString();
-            MoneyAfter.text = resultMoney.ToString();
+            MoneyAfter.text = resultMoneyClm.ToString();
         }
 
         // 수입, 지출
         {
             income.text = ScheduleResources.Instance.addMoney.ToString();
             consum.text = Mathf.Abs(ScheduleResources.Instance.subMoney).ToString();
-            profit.text = adjustMoney.ToString();
+            profit.text = resultMoneyClm.ToString();
         }
 
         // 게이지 설정

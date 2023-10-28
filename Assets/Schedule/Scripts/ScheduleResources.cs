@@ -27,6 +27,7 @@ public class ScheduleResources : MonoBehaviour
     float currBlood = 0;
     public float CurrBlood => currBlood;
     public float PreviewBlood => CurrBlood + adjustBlood;
+    float PreviewBloodClm => Mathf.Clamp(PreviewBlood, 0, float.MaxValue);
     [SerializeField]
     Text bloodTxt;    
 
@@ -36,6 +37,7 @@ public class ScheduleResources : MonoBehaviour
     float currStress = 0;
     public float CurrStress => currStress;
     public float PreviewStress => currStress + adjustStress;
+    float PreviewStressClm => Mathf.Clamp(PreviewStress, 0, float.MaxValue);
     [SerializeField]
     Text stressTxt;
     [SerializeField]
@@ -49,6 +51,7 @@ public class ScheduleResources : MonoBehaviour
     float currLove = 0;
     public float CurrLove => currLove;
     public float PreviewLove => CurrLove + adjustLove;
+    float PreviewLoveClm => Mathf.Clamp(PreviewLove, 0, float.MaxValue);
     [SerializeField]
     Text loveTxt;
 
@@ -59,7 +62,8 @@ public class ScheduleResources : MonoBehaviour
     [SerializeField]
     int currMoney = 0;
     public int CurrMoney => currMoney;
-    public float PreviewMoney => CurrMoney + addMoney + subMoney;
+    public int PreviewMoney => CurrMoney + addMoney + subMoney;
+    int PreviewMoneyClm => Mathf.Clamp(PreviewMoney, 0, int.MaxValue);
     [SerializeField]
     Text moneyTxt;
 
@@ -128,13 +132,13 @@ public class ScheduleResources : MonoBehaviour
 
         // 게이지
         currStressGage.fillAmount = currStress / MAX_STRESS;
-        previewStressGage.fillAmount = (currStress + adjustStress) / MAX_STRESS;      
-
+        previewStressGage.fillAmount = (currStress + adjustStress) / MAX_STRESS;
+       
         // 텍스트 설정
-        bloodTxt.text = (currBlood + adjustBlood).ToString("F1") + "/" + MAX_BLOOD + BLOOD_STRING;
-        stressTxt.text = (currStress + adjustStress).ToString() + "/" + MAX_STRESS;
-        loveTxt.text = (currLove + adjustLove).ToString() + "/" + MAX_LOVE;
-        moneyTxt.text = (currMoney + adjustMoney).ToString();
+        bloodTxt.text = PreviewBloodClm.ToString("F1") + "/" + MAX_BLOOD + BLOOD_STRING;
+        stressTxt.text = PreviewStressClm.ToString() + "/" + MAX_STRESS;
+        loveTxt.text = PreviewLoveClm.ToString() + "/" + MAX_LOVE;
+        moneyTxt.text = PreviewMoneyClm.ToString();
         dayTxt.text = currDay.ToString();
     }
 
@@ -161,11 +165,10 @@ public class ScheduleResources : MonoBehaviour
     {
         int adjustMoney = addMoney + subMoney;
 
-        currBlood += adjustBlood;
-        currStress += adjustStress;
-        currLove += adjustLove;
-
-        currMoney += adjustMoney;
+        currBlood = PreviewBloodClm;
+        currStress = PreviewStressClm;
+        currLove = PreviewLoveClm;
+        currMoney = PreviewMoneyClm;
 
         adjustBlood = 0;
         adjustStress = 0;
