@@ -20,8 +20,6 @@ public class ResultUi : MonoBehaviour
     [SerializeField] Text consum;
     [SerializeField] Text profit;
 
-    const int loveNeedAmount = 50;
-    const int bloodNeedAmount = 50;
     [SerializeField] Text loveNeed;
     [SerializeField] Text bloodNeed;
     [SerializeField] Image loveGage;
@@ -54,7 +52,7 @@ public class ResultUi : MonoBehaviour
         float adjustBlood = ScheduleResources.Instance.adjustBlood;
         float adjustStress = ScheduleResources.Instance.adjustStress;
         float adjustLove = ScheduleResources.Instance.adjustLove;
-        int adjustMoney = ScheduleResources.Instance.adjustMoney;
+        int adjustMoney = ScheduleResources.Instance.addMoney + ScheduleResources.Instance.subMoney;
 
         float resultBlood = currBlood + adjustBlood;
         float resultStress = currStress + adjustStress;
@@ -110,6 +108,14 @@ public class ResultUi : MonoBehaviour
             MoneyBefore.text = currMoney.ToString();
             MoneyAfter.text = resultMoney.ToString();
         }
+
+        // 수입, 지출
+        {
+            income.text = ScheduleResources.Instance.addMoney.ToString();
+            consum.text = Mathf.Abs(ScheduleResources.Instance.subMoney).ToString();
+            profit.text = adjustMoney.ToString();
+        }
+
 
         // 게이지 설정
         {

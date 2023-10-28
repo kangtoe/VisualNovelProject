@@ -65,7 +65,7 @@ public class ScheduleManager : MonoBehaviour
         resource.adjustBlood += entity.blood;
         resource.adjustLove += entity.love;
         resource.adjustStress += entity.stress;
-        resource.adjustMoney += entity.money;
+        if (entity.money > 0) resource.addMoney += entity.money; else resource.subMoney += entity.money; //resource.adjustMoney += entity.money;
         resource.PreviewUI();
         return targetUI;
     }

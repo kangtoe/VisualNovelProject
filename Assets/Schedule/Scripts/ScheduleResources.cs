@@ -50,7 +50,9 @@ public class ScheduleResources : MonoBehaviour
     Text loveTxt;
 
     [Header("돈")]
-    public int adjustMoney;
+    public int addMoney;
+    public int subMoney;
+    //public int adjustMoney;
     [SerializeField]
     int currMoney = 0;
     public int CurrMoney => currMoney;
@@ -85,6 +87,8 @@ public class ScheduleResources : MonoBehaviour
     // 수정값대로 UI 미리보기
     public void PreviewUI()
     {
+        float adjustMoney = addMoney + subMoney;
+
         Color color;        
         Color colorPositive = Color.green;
         Color colorNevative = Color.red;
@@ -136,7 +140,7 @@ public class ScheduleResources : MonoBehaviour
         adjustBlood = 0;
         adjustStress = 0;
         adjustLove = 0;
-        adjustMoney = 0;
+        addMoney = 0; subMoney = 0; //adjustMoney = 0;
         currDay = 0;
 
         PreviewUI();      
@@ -151,15 +155,18 @@ public class ScheduleResources : MonoBehaviour
     // 수정값 적용
     public void Admit()
     {
+        int adjustMoney = addMoney + subMoney;
+
         currBlood += adjustBlood;
         currStress += adjustStress;
         currLove += adjustLove;
+
         currMoney += adjustMoney;
 
         adjustBlood = 0;
         adjustStress = 0;
         adjustLove = 0;
-        adjustMoney = 0;
+        addMoney = 0; subMoney = 0;
 
         currDay++;
         dayTxt.text = currDay.ToString();
