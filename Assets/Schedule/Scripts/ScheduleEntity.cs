@@ -134,8 +134,7 @@ public class ScheduleEntity : MonoBehaviour
 
     public void ActiveHoverUi()
     {
-        hoverUi.SetActive(true);
-        InitHoverUi();
+        hoverUi.SetActive(true);        
     }
 
     public void InactiveHoverUi()

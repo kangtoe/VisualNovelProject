@@ -1,9 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HoverUi : MonoBehaviour
 {
+    static string moneyPstr = "원의 수입이 발생합니다.";
+    static string moneyNstr = "원의 지출이 발생합니다.";
+    static string stressPstr = "만큼 스트레스를 낮춥니다.";
+    static string stressNstr = "만큼 스트레스를 받습니다.";
+    static string lovePstr = "의 호감도를 얻습니다.";
+    static string loveNstr = "의 호감도를 잃습니다.";
+    static string bloodPstr = "L의 피를 흡혈합니다.";
+    static string bloodNstr = "L의 피를 잃습니다.";
+
     [Header("이익 문구")]
     [SerializeField] GameObject moneyP;
     [SerializeField] GameObject stressP;
@@ -24,7 +32,16 @@ public class HoverUi : MonoBehaviour
 
     public void Init(int momeyChangeAmount, int stressChangeAmount, int loveChangeAmount, float bloodChangeAmount)
     {
-        Debug.Log(name + " init");
+        // 디버깅
+        {
+            string str = "";
+            str += name + " init";
+            str += " || momeyChangeAmount : " + momeyChangeAmount;
+            str += " || stressChangeAmount : " + stressChangeAmount;
+            str += " || loveChangeAmount : " + loveChangeAmount;
+            str += " || bloodChangeAmount : " + bloodChangeAmount;
+            Debug.Log(str);
+        }       
 
         int CurrentMoney = ScheduleResources.Instance.CurrMoney;
         float CurrentStress = ScheduleResources.Instance.CurrStress;
@@ -33,34 +50,110 @@ public class HoverUi : MonoBehaviour
 
         // 증감 문구 토글 (변화가 없는 경우 끄기)
         {
-            bool isMoneyChage = (momeyChangeAmount == 0); // 값 변화가 있는가?
-            bool moneyChangePositive = (momeyChangeAmount > 0);
-            moneyP.SetActive(isMoneyChage);
-            moneyN.SetActive(isMoneyChage);
-            moneyChange.gameObject.SetActive(isMoneyChage);
-            if (isMoneyChage) moneyChange.Init(moneyChangePositive, CurrentMoney, momeyChangeAmount); // 변화량 문구 초기화
+            bool isMoneyChange = !(momeyChangeAmount == 0); // 값 변화가 있는가?                                                            
+            if (isMoneyChange)
+            {
+                bool changePositive = (momeyChangeAmount > 0);
+                float changeAmount = Mathf.Abs(momeyChangeAmount);
+                if (changePositive)
+                {
+                    moneyP.SetActive(true);
+                    moneyN.SetActive(false);
+                    moneyP.GetComponent<Text>().text = changeAmount + moneyPstr;
+                }
+                else
+                {
+                    moneyP.SetActive(false);
+                    moneyN.SetActive(true);
+                    moneyN.GetComponent<Text>().text = changeAmount + moneyNstr;
+                }                                
+                moneyChange.Init(changePositive, CurrentMoney, momeyChangeAmount); // 변화량 문구 초기화
+            }
+            else
+            {
+                moneyP.SetActive(false);
+                moneyN.SetActive(false);
+                moneyChange.gameObject.SetActive(false);
+            }
 
-            bool isStressChange = (stressChangeAmount == 0);
-            bool stressChangePositive = (stressChangeAmount > 0);
-            moneyP.SetActive(isStressChange);
-            moneyN.SetActive(isStressChange);
-            moneyChange.gameObject.SetActive(isStressChange);
-            if (isStressChange) moneyChange.Init(stressChangePositive, CurrentStress, stressChangeAmount);
+            bool isStressChange = !(stressChangeAmount == 0);
+            if (isStressChange)
+            {
+                bool changePositive = (stressChangeAmount < 0);
+                float changeAmount = Mathf.Abs(stressChangeAmount);
+                if (changePositive)
+                {
+                    stressP.SetActive(true);
+                    stressN.SetActive(false);
+                    stressP.GetComponent<Text>().text = changeAmount + stressPstr;
+                }
+                else
+                {
+                    stressP.SetActive(false);
+                    stressN.SetActive(true);
+                    stressN.GetComponent<Text>().text = changeAmount + stressNstr;
+                }
+                stressChange.Init(changePositive, CurrentStress, stressChangeAmount);
+            }
+            else
+            {
+                stressP.SetActive(false);
+                stressN.SetActive(false);
+                stressChange.gameObject.SetActive(false);
+            }
 
-            bool isLoveChange = (loveChangeAmount == 0);
-            bool loveChangePositive = (loveChangeAmount > 0);
-            moneyP.SetActive(isLoveChange);
-            moneyN.SetActive(isLoveChange);
-            moneyChange.gameObject.SetActive(isLoveChange);
-            if (isLoveChange) moneyChange.Init(loveChangePositive, CurrentLove, loveChangeAmount);
+            bool isLoveChange = !(loveChangeAmount == 0);
+            if (isLoveChange)
+            {
+                bool changePositive = (loveChangeAmount > 0);
+                float changeAmount = Mathf.Abs(loveChangeAmount);
+                if (changePositive)
+                {
+                    loveP.SetActive(true);
+                    loveN.SetActive(false);
+                    loveP.GetComponent<Text>().text = changeAmount + lovePstr;
+                }
+                else
+                {
+                    loveP.SetActive(false);
+                    loveN.SetActive(true);
+                    loveN.GetComponent<Text>().text = changeAmount + loveNstr;
+                }
+                loveChange.Init(changePositive, CurrentLove, loveChangeAmount);
+            }
+            else
+            {
+                loveP.SetActive(false);
+                loveN.SetActive(false);
+                loveChange.gameObject.SetActive(false);
+            }
 
-            bool isBloodChange = (bloodChangeAmount == 0);
-            bool bloodChangePositive = (stressChangeAmount < 0);
-            moneyP.SetActive(isBloodChange);
-            moneyN.SetActive(isBloodChange);
-            moneyChange.gameObject.SetActive(isBloodChange);
-            if (isBloodChange) moneyChange.Init(bloodChangePositive, CurrentBlood, bloodChangeAmount);
-
+            bool isBloodChange = !(bloodChangeAmount == 0);
+            if (isBloodChange)
+            {
+                bool changePositive = (bloodChangeAmount > 0);
+                float changeAmount = Mathf.Abs(bloodChangeAmount);
+                if (changePositive)
+                {
+                    bloodP.SetActive(true);
+                    bloodN.SetActive(false);
+                    bloodP.GetComponent<Text>().text = changeAmount + bloodPstr;
+                }
+                else
+                {
+                    bloodP.SetActive(false);
+                    bloodN.SetActive(true);
+                    bloodN.GetComponent<Text>().text = changeAmount + bloodNstr;
+                }
+                bloodChange.Init(changePositive, CurrentBlood, bloodChangeAmount);
+            }
+            else
+            {
+                bloodP.SetActive(false);
+                bloodN.SetActive(false);
+                bloodChange.gameObject.SetActive(false);
+            }
+                          
         }
     }
 }

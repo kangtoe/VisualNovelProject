@@ -11926,7 +11926,7 @@ MonoBehaviour:
   hoverUi: {fileID: 779894143}
   selectPreviewObj: {fileID: 512042410}
   blood: 0.5
-  stress: 0
+  stress: 10
   money: 0
   love: 0
 --- !u!1 &2012141201
