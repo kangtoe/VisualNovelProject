@@ -67,9 +67,9 @@ public class ResultUi : MonoBehaviour
         // ÅØ½ºÆ® »ö ¼³Á¤
         {
             Color color;
-            Color colorPositive = Color.green;
-            Color colorNevative = Color.red;
-            Color colorNomal = new Color(0.3529412f, 0.2745098f, 0.2627451f,1);
+            Color colorPositive = new Color(0.1725f, 0.6863f, 0.3765f, 1); // 2CAF60
+            Color colorNevative = new Color(0.7961f, 0.1294f, 0.1294f, 1); // CB2121
+            Color colorNomal = new Color(0.3529412f, 0.2745098f, 0.2627451f, 1);
 
             // ÈíÇ÷
             if (adjustBlood > 0) color = colorPositive;
