@@ -73,7 +73,7 @@ public class ScheduleEntity : MonoBehaviour
 
         // 가능한 스케쥴인지 체크
         {
-            if (ScheduleResources.Instance.CurrMoney + money < 0) return;
+            if (ScheduleResources.Instance.PreviewMoney + money < 0) return;
             if (ScheduleResources.Instance.PreviewStress + stress > ScheduleResources.MAX_STRESS) return;
         }
 
@@ -143,6 +143,7 @@ public class ScheduleEntity : MonoBehaviour
 
     public void ActiveHoverUi()
     {
+        InitHoverUi();
         hoverUi.SetActive(true);        
     }
 
