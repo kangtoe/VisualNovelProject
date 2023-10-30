@@ -680,14 +680,22 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 2
       debugIndex: 2
-      strings: []
-      isEmpty: 1
+      strings:
+      - "\uC77C\uC0C1"
+      - 
+      - Bgm
+      - Daily.mp3
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 3
       debugIndex: 3
-      strings: []
-      isEmpty: 1
+      strings:
+      - "\uBC14\uB78C"
+      - 
+      - Bgm
+      - Wind.wav
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
@@ -704,6 +712,40 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 6
       debugIndex: 6
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings:
+      - "\uB465"
+      - 
+      - Se
+      - "\uB465.wav"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 11
       strings:
       - "\uB0AE\uC740\uB465"
       - 
@@ -712,8 +754,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
+    - rowIndex: 12
+      debugIndex: 12
       strings:
       - "\uB192\uC740\uB465"
       - 
@@ -722,8 +764,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 8
-      debugIndex: 8
+    - rowIndex: 13
+      debugIndex: 13
       strings:
       - "\uBBF8\uC2A4\uD14C\uB9AC"
       - 
@@ -732,8 +774,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 9
-      debugIndex: 9
+    - rowIndex: 14
+      debugIndex: 14
       strings:
       - "\uBC1C\uC18C\uB9AC"
       - 
@@ -742,8 +784,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 10
-      debugIndex: 10
+    - rowIndex: 15
+      debugIndex: 15
       strings:
       - "\uD788\uD2B8"
       - 
@@ -752,9 +794,19 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - "\uB178\uD2B8\uCD94\uAC00"
+      - 
+      - Se
+      - "\uB178\uD2B8\uCD94\uAC00.wav"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/Vampire/Vampire.xls:Sound
     type: 1
-    textLength: 112
+    textLength: 161
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
   - rows:
